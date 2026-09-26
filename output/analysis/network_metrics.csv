@@ -1,0 +1,31 @@
+﻿network,metric,value,note
+information_diffusion,nodes,931,
+information_diffusion,edges,461,
+information_diffusion,average_degree,0.9903329752953813,
+information_diffusion,density,0.0005324370834921405,
+information_diffusion,isolates,375,
+information_diffusion,components,470,weakly connected for information; connected for users
+information_diffusion,largest_component_nodes,82,
+information_diffusion,largest_component_share,0.08807733619763695,
+information_diffusion,average_clustering,0,
+information_diffusion,transitivity,0,
+information_diffusion,degree_assortativity,-0.062399858501363016,degree correlation across connected node pairs
+information_diffusion,largest_component_average_shortest_path,16.836796145739235,largest component only; direction ignored for information network
+information_diffusion,largest_component_diameter,45,largest component only; direction ignored for information network
+information_diffusion,strongly_connected_components,931,
+information_diffusion,reciprocity,0,
+user_interaction,nodes,200,
+user_interaction,edges,170,
+user_interaction,average_degree,1.7,
+user_interaction,density,0.008542713567839196,
+user_interaction,isolates,56,
+user_interaction,components,65,weakly connected for information; connected for users
+user_interaction,largest_component_nodes,125,
+user_interaction,largest_component_share,0.625,
+user_interaction,average_clustering,0.19178214106155284,
+user_interaction,transitivity,0.02451202905129369,
+user_interaction,degree_assortativity,-0.41063947433867026,degree correlation across connected node pairs
+user_interaction,largest_component_average_shortest_path,2.48941935483871,largest component only; direction ignored for information network
+user_interaction,largest_component_diameter,5,largest component only; direction ignored for information network
+user_interaction,communities_louvain,78,
+user_interaction,modularity_louvain,0.44169220825253847,"weighted Louvain communities, seed=42"

@@ -89,6 +89,19 @@ javac --release 17 -cp tools/gephi-toolkit-0.11.3-all.jar -d build/gephi src/Gep
 
 `output/gephi/`에는 각 네트워크의 PNG, 스타일이 포함된 GEXF, 편집 가능한 `.gephi` 프로젝트 파일이 생성됩니다. GEXF와 `.gephi`에는 모든 노드가 보존되며, 보고서용 PNG는 연결 구조를 읽기 쉽도록 degree가 0인 고립 노드만 제외합니다.
 
+## 7. 네트워크 지표와 LLM 키워드 분석
+
+```powershell
+python src/analyze_networks.py
+python src/analyze_content.py
+```
+
+`output/analysis/`에는 네트워크 지표, 핵심 노드 순위, 키워드 후보, LLM 보조 키워드 분석 결과가 CSV·JSON·Markdown 형식으로 생성됩니다. `output/figures/`에는 보고서용 워드클라우드와 상위 키워드 막대그래프가 생성됩니다.
+
+- 네트워크 경로 길이와 지름은 그래프가 분리되어 있으므로 가장 큰 연결 성분에서만 계산합니다.
+- 키워드 빈도는 네트워크 문맥을 위해 추가로 받은 답글을 제외하고, 해시태그 타임라인에서 직접 수집한 500개 게시물만 사용합니다.
+- LLM은 빈도 후보를 의미 단위로 묶는 데 사용하며, 실제 빈도는 코드에 기록된 패턴으로 다시 계산해 재현할 수 있게 했습니다.
+
 Mastodon은 분산형 서비스이므로 선택한 서버가 알고 있는 게시물만 반환합니다. 목표 수량이 부족하면 관련 해시태그나 seed user를 추가하거나, 해당 사건의 게시물을 더 많이 알고 있는 서버를 사용해야 합니다.
 
 ## 공식 API 문서

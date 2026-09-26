@@ -93,14 +93,32 @@ javac --release 17 -cp tools/gephi-toolkit-0.11.3-all.jar -d build/gephi src/Gep
 
 ```powershell
 python src/analyze_networks.py
+python src/plot_user_measures.py
+ollama pull llama3.2:3b
+python src/extract_keywords_llm.py
 python src/analyze_content.py
 ```
 
-`output/analysis/`에는 네트워크 지표, 핵심 노드 순위, 키워드 후보, LLM 보조 키워드 분석 결과가 CSV·JSON·Markdown 형식으로 생성됩니다. `output/figures/`에는 보고서용 워드클라우드와 상위 키워드 막대그래프가 생성됩니다.
+`output/analysis/`에는 네트워크 지표, 200명 전원의 1-hop 관계 및 중심성, 게시물별 LLM 키워드 3개, 키워드 빈도와 분석 결과가 생성됩니다. `output/figures/`에는 PageRank·degree·betweenness 분포, 보고서용 워드클라우드와 상위 키워드 막대그래프가 생성됩니다.
 
 - 네트워크 경로 길이와 지름은 그래프가 분리되어 있으므로 가장 큰 연결 성분에서만 계산합니다.
-- 키워드 빈도는 네트워크 문맥을 위해 추가로 받은 답글을 제외하고, 해시태그 타임라인에서 직접 수집한 500개 게시물만 사용합니다.
-- LLM은 빈도 후보를 의미 단위로 묶는 데 사용하며, 실제 빈도는 코드에 기록된 패턴으로 다시 계산해 재현할 수 있게 했습니다.
+- 키워드 분석은 네트워크 문맥을 위해 추가로 받은 답글을 제외하고, 해시태그 타임라인에서 직접 수집한 500개 게시물만 사용합니다.
+- Llama 3.2 3B를 Ollama로 로컬 실행하여 게시물마다 정확히 3개의 키워드를 생성합니다. 실제 토큰이나 유료 API는 필요하지 않습니다.
+- `extract_keywords_llm.py`는 중간 결과를 매 배치 저장하므로 중단되어도 기본 실행으로 이어서 처리합니다. 처음부터 다시 하려면 `--overwrite`를 사용합니다.
+
+## 8. 최종 보고서와 제출 ZIP
+
+키워드 추출과 분석까지 끝난 뒤 실행합니다.
+
+```powershell
+python src/generate_report.py
+python src/build_submission.py
+```
+
+- 최종 보고서: `output/pdf/CSE472_Project1_Report.pdf`
+- Gradescope 제출 파일: `output/submission/CSE472_Project1_Submission.zip`
+
+제출 ZIP은 실제 `.env`와 API 토큰, 로컬 프로그램, 임시 파일 및 Java 보조 코드를 제외합니다. 과제에서 요구한 두 JSON 데이터셋, Python 소스, Gephi 프로젝트·이미지, 분석 결과와 PDF 보고서만 포함합니다.
 
 Mastodon은 분산형 서비스이므로 선택한 서버가 알고 있는 게시물만 반환합니다. 목표 수량이 부족하면 관련 해시태그나 seed user를 추가하거나, 해당 사건의 게시물을 더 많이 알고 있는 서버를 사용해야 합니다.
 

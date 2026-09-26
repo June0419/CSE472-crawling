@@ -1,17 +1,14 @@
-"""Create a reproducible LLM-assisted keyword analysis and report figures."""
+"""Aggregate per-post LLM keywords and create the required word cloud."""
 
 from __future__ import annotations
 
 import csv
-import html
-import json
 import os
-import re
 from collections import Counter
 from pathlib import Path
 from typing import Any
 
-from config import DATA_DIR, ROOT_DIR
+from config import ROOT_DIR
 
 
 _MPL_CACHE = ROOT_DIR / "tmp" / "matplotlib"
@@ -28,298 +25,104 @@ from wordcloud import WordCloud
 
 ANALYSIS_DIR = ROOT_DIR / "output" / "analysis"
 FIGURE_DIR = ROOT_DIR / "output" / "figures"
+INPUT_PATH = ANALYSIS_DIR / "post_keywords_llm.csv"
+PROMPT_PATH = ANALYSIS_DIR / "llm_keyword_prompt.txt"
 
-# The semantic groups were selected in an OpenAI Codex (GPT-5) review of the
-# frequency-ranked terms and bigrams. Explicit patterns make the final counts
-# auditable and reproducible without sending the dataset to another API.
-CONCEPTS: dict[str, dict[str, Any]] = {
-    "Palisades Fire": {
-        "group": "event",
-        "patterns": [r"\bpalisades\s+fire\b", r"\bpalisadesfire\b"],
-        "rationale": "Direct references to the focal disaster.",
-    },
-    "Eaton Fire": {
-        "group": "event",
-        "patterns": [r"\beaton\s+fire\b", r"\beatonfire\b"],
-        "rationale": "A second Los Angeles fire frequently discussed alongside the focal event.",
-    },
-    "Pacific Palisades": {
-        "group": "place",
-        "patterns": [r"\bpacific\s+palisades\b", r"\bpacificpalisades\b"],
-        "rationale": "The neighborhood at the center of the event.",
-    },
-    "Los Angeles": {
-        "group": "place",
-        "patterns": [
-            r"\blos\s+angeles\b",
-            r"\blosangeles\b",
-            r"\bla\s+county\b",
-            r"\blacounty\b",
-        ],
-        "rationale": "Regional references connecting the fire to Los Angeles.",
-    },
-    "California": {
-        "group": "place",
-        "patterns": [r"\bcalifornia\b", r"\bcalfire\b"],
-        "rationale": "State-level location and response references.",
-    },
-    "Malibu": {
-        "group": "place",
-        "patterns": [r"\bmalibu\b"],
-        "rationale": "Nearby community repeatedly discussed in the sample.",
-    },
-    "Wildfire": {
-        "group": "hazard",
-        "patterns": [r"\bwildfires?\b", r"\bwildfireseason\b"],
-        "rationale": "Broader hazard framing beyond the event name.",
-    },
-    "Rain & Storm": {
-        "group": "hazard",
-        "patterns": [r"\brain(?:fall|fall)?\b", r"\bstorms?\b"],
-        "rationale": "Post-fire weather conditions discussed in the sample.",
-    },
-    "Debris Flow & Flooding": {
-        "group": "hazard",
-        "patterns": [
-            r"\bdebris\s+flows?\b",
-            r"\bmudslides?\b",
-            r"\bflood(?:s|ed|ing)?\b",
-            r"\bflash\s+floods?\b",
-        ],
-        "rationale": "Secondary hazards affecting burned areas.",
-    },
-    "Burn Scar": {
-        "group": "hazard",
-        "patterns": [r"\bburn\s+scars?\b", r"\bburned\s+areas?\b"],
-        "rationale": "Fire-damaged terrain vulnerable to later hazards.",
-    },
-    "Evacuation": {
-        "group": "response",
-        "patterns": [r"\bevacuat(?:e|ed|es|ing|ion|ions)\b"],
-        "rationale": "Movement and safety instructions during the emergency.",
-    },
-    "Firefighters": {
-        "group": "response",
-        "patterns": [r"\bfirefighters?\b", r"\bfire\s+crews?\b"],
-        "rationale": "Front-line emergency personnel.",
-    },
-    "Emergency Response": {
-        "group": "response",
-        "patterns": [
-            r"\bemergency\s+response\b",
-            r"\bfirst\s+responders?\b",
-            r"\bemergency\s+services?\b",
-        ],
-        "rationale": "Coordinated response and emergency-service discussion.",
-    },
-    "Containment & Acres": {
-        "group": "response",
-        "patterns": [r"\bcontainment\b", r"\bacres?\b"],
-        "rationale": "Operational fire-size and containment updates.",
-    },
-    "Damage & Loss": {
-        "group": "impact",
-        "patterns": [
-            r"\bdamag(?:e|ed|es)\b",
-            r"\bdestroy(?:ed|s|ing)\b",
-            r"\bdestruction\b",
-            r"\bloss(?:es)?\b",
-        ],
-        "rationale": "Descriptions of physical and personal losses.",
-    },
-    "Homes & Property": {
-        "group": "impact",
-        "patterns": [
-            r"\bhomes?\b",
-            r"\bproperties?\b",
-            r"\bbuildings?\b",
-            r"\bresidences?\b",
-        ],
-        "rationale": "Built-environment impacts in affected communities.",
-    },
-    "Smoke & Air Quality": {
-        "group": "impact",
-        "patterns": [r"\bsmoke\b", r"\bair\s+quality\b"],
-        "rationale": "Environmental and health-related fire impacts.",
-    },
-    "Recovery & Rebuilding": {
-        "group": "recovery",
-        "patterns": [
-            r"\brecover(?:y|ies|ed|ing)?\b",
-            r"\brebuild(?:s|ing|able)?\b",
-            r"\breconstruction\b",
-        ],
-        "rationale": "Longer-term recovery after the immediate disaster.",
-    },
-    "Insurance": {
-        "group": "recovery",
-        "patterns": [r"\binsurance\b", r"\binsurers?\b", r"\binsured\b"],
-        "rationale": "Financial recovery and coverage concerns.",
-    },
-    "Community Support": {
-        "group": "community",
-        "patterns": [
-            r"\bcommunity\s+support\b",
-            r"\bdonat(?:e|ed|es|ing|ion|ions)\b",
-            r"\bfundrais(?:er|ers|ing)\b",
-            r"\brelief\s+fund\b",
-        ],
-        "rationale": "Mutual aid, donations, and organized support.",
-    },
-    "Climate Change": {
-        "group": "cause & policy",
-        "patterns": [
-            r"\bclimate\s+change\b",
-            r"\bclimate\s+crisis\b",
-            r"\bglobal\s+warming\b",
-        ],
-        "rationale": "Climate-related interpretation of wildfire risk.",
-    },
-    "Government & FEMA": {
-        "group": "cause & policy",
-        "patterns": [
-            r"\bfema\b",
-            r"\bgovernment\b",
-            r"\bgovernor\b",
-            r"\bmayor\b",
-        ],
-        "rationale": "Public institutions, officials, and recovery policy.",
-    },
-    "Investigation & Arson": {
-        "group": "cause & policy",
-        "patterns": [
-            r"\barson\b",
-            r"\binvestigat(?:e|ed|es|ing|ion|ions)\b",
-            r"\bcause\s+of\s+the\s+fire\b",
-        ],
-        "rationale": "Discussion of the fire's origin and investigation.",
-    },
+# Merge only transparent spelling and number variants after LLM extraction.
+ALIASES = {
+    "wildfires": "wildfire",
+    "forest fire": "wildfire",
+    "forest fires": "wildfire",
+    "palisades wildfire": "palisades fire",
+    "pacific palisades fire": "palisades fire",
+    "eaton wildfire": "eaton fire",
+    "los angeles county": "los angeles",
+    "la county": "los angeles",
+    "lafires": "los angeles fires",
+    "fire fighters": "firefighters",
+    "firefighter": "firefighters",
+    "debris flows": "debris flow",
+    "burn scars": "burn scar",
+    "evacuations": "evacuation",
+    "evacuation warning": "evacuation",
+    "evacuation warnings": "evacuation",
+    "evacuation order": "evacuation",
+    "evacuation orders": "evacuation",
+    "rainfall": "rain",
+    "fema assistance": "fema",
+    "homes": "home damage",
 }
 
-STOPWORDS = set(
-    """
-    a about above after again against all am an and any are aren't as at be because
-    been before being below between both but by can can't cannot could couldn't did
-    didn't do does doesn't doing don't down during each few for from further had
-    hadn't has hasn't have haven't having he he'd he'll he's her here here's hers
-    herself him himself his how how's i i'd i'll i'm i've if in into is isn't it it's
-    its itself just let's me more most mustn't my myself no nor not of off on once
-    only or other ought our ours ourselves out over own same shan't she she'd she'll
-    she's should shouldn't so some such than that that's the their theirs them
-    themselves then there there's these they they'd they'll they're they've this
-    those through to too under until up very was wasn't we we'd we'll we're we've
-    were weren't what what's when when's where where's which while who who's whom
-    why why's will with won't would wouldn't you you'd you'll you're you've your yours
-    yourself yourselves http https www com org amp mastodon social
-    """.split()
-)
+
+def _canonical(value: str) -> str:
+    keyword = " ".join(value.lower().strip().split())
+    return ALIASES.get(keyword, keyword)
 
 
-def _load_posts() -> tuple[dict[str, Any], list[dict[str, Any]]]:
-    path = DATA_DIR / "posts.json"
-    if not path.exists():
-        raise FileNotFoundError("Run collect_posts.py before content analysis.")
-    payload = json.loads(path.read_text(encoding="utf-8"))
-    # Context replies are collected to complete network edges. Keyword popularity
-    # uses the requested 500 hashtag-timeline posts so replies do not bias results.
-    posts = [
-        post
-        for post in payload.get("posts", [])
-        if "hashtag_timeline" in post.get("collection_methods", [])
-    ]
-    if not posts:
-        raise ValueError("No hashtag-timeline posts were found.")
-    return payload.get("metadata", {}), posts
-
-
-def _clean_text(value: str) -> str:
-    text = html.unescape(value or "").lower()
-    text = re.sub(r"https?://\S+|www\.\S+", " ", text)
-    text = re.sub(r"@[\w.:-]+", " ", text)
-    text = text.replace("’", "'")
-    return " ".join(text.split())
-
-
-def _tokens(text: str) -> list[str]:
-    return [
-        token
-        for token in re.findall(r"[a-z][a-z'-]{2,}", text)
-        if token not in STOPWORDS and not token.startswith("http")
-    ]
-
-
-def _candidate_counts(texts: list[str]) -> tuple[Counter[str], Counter[str]]:
-    terms: Counter[str] = Counter()
-    bigrams: Counter[str] = Counter()
-    for text in texts:
-        tokens = _tokens(text)
-        terms.update(tokens)
-        bigrams.update(" ".join(pair) for pair in zip(tokens, tokens[1:]))
-    return terms, bigrams
-
-
-def _concept_rows(texts: list[str]) -> list[dict[str, Any]]:
-    rows: list[dict[str, Any]] = []
-    for keyword, definition in CONCEPTS.items():
-        compiled = [re.compile(pattern, re.IGNORECASE) for pattern in definition["patterns"]]
-        support = sum(any(pattern.search(text) for pattern in compiled) for text in texts)
-        rows.append(
-            {
-                "keyword": keyword,
-                "post_count": support,
-                "post_share_percent": 100 * support / len(texts),
-                "semantic_group": definition["group"],
-                "matched_patterns": " | ".join(definition["patterns"]),
-                "rationale": definition["rationale"],
-            }
-        )
-    rows.sort(key=lambda row: (-row["post_count"], row["keyword"]))
-    for index, row in enumerate(rows, 1):
-        row["rank"] = index
+def _load_rows() -> list[dict[str, str]]:
+    if not INPUT_PATH.exists():
+        raise FileNotFoundError("Run extract_keywords_llm.py before content analysis.")
+    with INPUT_PATH.open(encoding="utf-8-sig", newline="") as stream:
+        rows = list(csv.DictReader(stream))
+    if len(rows) != 500:
+        raise ValueError(f"Expected 500 post keyword rows, found {len(rows)}.")
+    if len({row["post_id"] for row in rows}) != 500:
+        raise ValueError("Post keyword rows contain duplicate IDs.")
+    for row in rows:
+        keywords = [row[f"keyword_{index}"] for index in range(1, 4)]
+        if any(not keyword.strip() for keyword in keywords):
+            raise ValueError(f"Post {row['post_id']} has a blank keyword.")
+        if len({keyword.lower().strip() for keyword in keywords}) != 3:
+            raise ValueError(f"Post {row['post_id']} has duplicate raw keywords.")
     return rows
 
 
+def _frequency_rows(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
+    counts: Counter[str] = Counter()
+    for row in rows:
+        counts.update(
+            {
+                _canonical(row[f"keyword_{index}"])
+                for index in range(1, 4)
+            }
+        )
+    return [
+        {
+            "rank": rank,
+            "keyword": keyword,
+            "frequency": frequency,
+            "post_share_percent": 100 * frequency / len(rows),
+        }
+        for rank, (keyword, frequency) in enumerate(counts.most_common(), 1)
+    ]
+
+
 def _write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
-    if not rows:
-        return
-    fieldnames = ["rank", *[key for key in rows[0] if key != "rank"]]
     with path.open("w", newline="", encoding="utf-8-sig") as stream:
-        writer = csv.DictWriter(stream, fieldnames=fieldnames)
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
 
 
-def _candidate_rows(counter: Counter[str], limit: int = 100) -> list[dict[str, Any]]:
-    return [
-        {"rank": index, "candidate": candidate, "occurrences": occurrences}
-        for index, (candidate, occurrences) in enumerate(counter.most_common(limit), 1)
-    ]
-
-
-def _plot_wordcloud(rows: list[dict[str, Any]], path: Path, post_count: int) -> None:
-    frequencies = {
-        row["keyword"]: row["post_count"]
-        for row in rows
-        if row["post_count"] > 0
-    }
+def _plot_wordcloud(frequencies: dict[str, int], path: Path) -> None:
     cloud = WordCloud(
         width=2000,
         height=1150,
         background_color="white",
         colormap="inferno",
         prefer_horizontal=0.9,
-        relative_scaling=0.5,
-        min_font_size=18,
-        max_words=18,
+        relative_scaling=0.45,
+        min_font_size=14,
+        max_words=60,
         collocations=False,
         random_state=42,
-        margin=8,
+        margin=7,
     ).generate_from_frequencies(frequencies)
 
     figure, axis = plt.subplots(figsize=(16, 9), facecolor="white")
     axis.imshow(cloud, interpolation="bilinear")
     axis.set_title(
-        "2025 Palisades Fire: LLM-Assisted Keyword Themes",
+        "2025 Palisades Fire: Llama 3.2 Keyword Cloud",
         fontsize=22,
         fontweight="bold",
         color="#172033",
@@ -328,7 +131,7 @@ def _plot_wordcloud(rows: list[dict[str, Any]], path: Path, post_count: int) -> 
     axis.text(
         0.5,
         -0.02,
-        f"Word size = number of matching posts in the {post_count}-post hashtag sample",
+        "Word size = frequency among 1,500 LLM-generated keywords from 500 posts",
         transform=axis.transAxes,
         ha="center",
         fontsize=11,
@@ -340,148 +143,104 @@ def _plot_wordcloud(rows: list[dict[str, Any]], path: Path, post_count: int) -> 
     plt.close(figure)
 
 
-def _plot_bars(rows: list[dict[str, Any]], path: Path, post_count: int) -> None:
-    selected = [row for row in rows[:15] if row["post_count"] > 0]
-    selected.reverse()
-    colors = {
-        "event": "#7c3aed",
-        "place": "#2563eb",
-        "hazard": "#dc2626",
-        "response": "#ea580c",
-        "impact": "#ca8a04",
-        "recovery": "#059669",
-        "community": "#0891b2",
-        "cause & policy": "#4f46e5",
-    }
+def _plot_bars(rows: list[dict[str, Any]], path: Path) -> None:
+    selected = list(reversed(rows[:15]))
     figure, axis = plt.subplots(figsize=(12, 8), facecolor="white")
     bars = axis.barh(
-        [row["keyword"] for row in selected],
-        [row["post_count"] for row in selected],
-        color=[colors[row["semantic_group"]] for row in selected],
+        [row["keyword"].title() for row in selected],
+        [row["frequency"] for row in selected],
+        color="#7c3aed",
         height=0.67,
     )
     for bar, row in zip(bars, selected):
         axis.text(
-            bar.get_width() + max(1, post_count * 0.006),
+            bar.get_width() + 1,
             bar.get_y() + bar.get_height() / 2,
-            f"{row['post_count']} ({row['post_share_percent']:.1f}%)",
+            f"{row['frequency']} ({row['post_share_percent']:.1f}%)",
             va="center",
             fontsize=9,
             color="#374151",
         )
     axis.set_title(
-        "Top Keyword Themes in Palisades Fire Posts",
+        "Most Frequent LLM-Generated Keywords",
         fontsize=18,
         fontweight="bold",
         color="#172033",
         pad=14,
     )
-    axis.set_xlabel(f"Posts containing theme (n = {post_count})")
+    axis.set_xlabel("Frequency among 500 posts (three keywords per post)")
     axis.grid(axis="x", color="#e5e7eb", linewidth=0.8)
     axis.set_axisbelow(True)
     axis.spines[["top", "right", "left"]].set_visible(False)
     axis.tick_params(axis="y", length=0)
-    max_value = max(row["post_count"] for row in selected)
-    axis.set_xlim(0, max_value * 1.28)
+    axis.set_xlim(0, max(row["frequency"] for row in selected) * 1.25)
     figure.tight_layout()
     figure.savefig(path, dpi=200, bbox_inches="tight", facecolor="white")
     plt.close(figure)
 
 
-def _analysis_markdown(
-    metadata: dict[str, Any], rows: list[dict[str, Any]], post_count: int
-) -> str:
-    table_lines = "\n".join(
-        f"| {row['rank']} | {row['keyword']} | {row['post_count']} | "
-        f"{row['post_share_percent']:.1f}% | {row['semantic_group']} |"
-        for row in rows[:15]
+def _summary(rows: list[dict[str, str]], frequencies: list[dict[str, Any]]) -> str:
+    prompt = PROMPT_PATH.read_text(encoding="utf-8").strip()
+    frequency_lines = "\n".join(
+        f"| {row['rank']} | {row['keyword']} | {row['frequency']} | {row['post_share_percent']:.1f}% |"
+        for row in frequencies[:15]
     )
-    return f"""# LLM-Assisted Keyword Analysis
+    sample_lines = "\n".join(
+        f"| {index} | {row['post_excerpt'][:140].replace('|', '/')} | "
+        f"{row['keyword_1']}; {row['keyword_2']}; {row['keyword_3']} |"
+        for index, row in enumerate(rows[:5], 1)
+    )
+    return f"""# Per-Post LLM Keyword Analysis
 
-## Scope
+## Method
 
-- Disaster: {metadata.get('disaster_name', '2025 Palisades Fire')}
-- Source instance: {metadata.get('source_instance', 'mastodon.social')}
-- Analysis sample: {post_count} posts collected directly from the selected hashtag timelines
-- Context-only replies were excluded from keyword frequency so they do not change the requested post sample.
+- Model: Llama 3.2 3B, instruction-tuned Q4_K_M build served locally by Ollama
+- Input: 500 posts collected directly from the selected hashtag timelines
+- Output: exactly three distinct keywords for every post (1,500 raw keyword assignments)
+- Generation: temperature 0 with a required JSON schema
+- Privacy: inference ran locally; post text was not sent to a hosted LLM API
 
-## LLM prompt and procedure
+## Exact system prompt
 
-**Model used:** OpenAI Codex (GPT-5), in the project-development session.
+```text
+{prompt}
+```
 
-**Prompt:** “Review the frequency-ranked unigrams and bigrams from public Mastodon posts about the 2025 Palisades Fire. Merge surface variants into clear disaster-related concepts, remove URL/platform artifacts, and retain interpretable themes covering the event, places, impacts, response, recovery, community, and policy. Do not infer sentiment or facts that are not present in the text. For every concept, provide transparent matching variants so its support can be counted reproducibly.”
+## Sample outputs
 
-The LLM was used for semantic grouping, not for inventing counts. `src/analyze_content.py` records each concept's regular-expression patterns and counts how many distinct posts contain at least one pattern. This lets the result be audited and rerun.
+| # | Post excerpt | Three generated keywords |
+|---:|---|---|
+{sample_lines}
 
-## Top themes
+## Most frequent keywords
 
-| Rank | Keyword/theme | Matching posts | Share | Group |
-|---:|---|---:|---:|---|
-{table_lines}
+| Rank | Keyword | Frequency | Share of posts |
+|---:|---|---:|---:|
+{frequency_lines}
 
 ## Interpretation
 
-The largest themes show what the collected posts mention most often; they do not measure approval, sentiment, or causal importance. Counts can overlap because one post may mention several themes. Results apply only to the collected public posts visible through the selected Mastodon instance and hashtags.
+The frequency distribution highlights the focal Palisades Fire discussion while also showing recurring references to Los Angeles locations, the Eaton Fire, evacuation, fire impacts, weather, and post-fire recovery. A sparse tail of terms such as Will Rogers, Volkswagen, and Palestine is unexpected in a disaster-focused sample and exposes cross-topic hashtag reuse or incidental references; those terms were retained instead of being manually filtered. Because each post contributes exactly three keywords, a term's frequency is also the number of sampled posts assigned that theme after transparent spelling normalization. The output summarizes themes; it does not measure sentiment or factual accuracy.
 """
 
 
 def main() -> None:
-    metadata, posts = _load_posts()
-    texts = [_clean_text(post.get("content_text", "")) for post in posts]
-    term_counts, bigram_counts = _candidate_counts(texts)
-    concept_rows = _concept_rows(texts)
-
-    ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
+    rows = _load_rows()
+    frequency_rows = _frequency_rows(rows)
+    frequencies = {row["keyword"]: row["frequency"] for row in frequency_rows}
     FIGURE_DIR.mkdir(parents=True, exist_ok=True)
-    _write_csv(ANALYSIS_DIR / "top_keywords.csv", concept_rows)
-    _write_csv(
-        ANALYSIS_DIR / "candidate_unigrams.csv", _candidate_rows(term_counts)
-    )
-    _write_csv(
-        ANALYSIS_DIR / "candidate_bigrams.csv", _candidate_rows(bigram_counts)
-    )
+    _write_csv(ANALYSIS_DIR / "llm_keyword_frequencies.csv", frequency_rows)
     (ANALYSIS_DIR / "llm_keyword_analysis.md").write_text(
-        _analysis_markdown(metadata, concept_rows, len(posts)), encoding="utf-8"
+        _summary(rows, frequency_rows), encoding="utf-8"
     )
-    (ANALYSIS_DIR / "keyword_analysis.json").write_text(
-        json.dumps(
-            {
-                "metadata": {
-                    "disaster_name": metadata.get("disaster_name"),
-                    "source_instance": metadata.get("source_instance"),
-                    "analyzed_post_count": len(posts),
-                    "selection": "posts collected directly from hashtag timelines",
-                    "context_posts_excluded": True,
-                    "llm_role": "semantic grouping of frequency-ranked candidates",
-                    "llm_model": "OpenAI Codex (GPT-5)",
-                },
-                "keywords": concept_rows,
-            },
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-    _plot_wordcloud(
-        concept_rows,
-        FIGURE_DIR / "palisades_fire_keyword_wordcloud.png",
-        len(posts),
-    )
-    _plot_bars(
-        concept_rows,
-        FIGURE_DIR / "palisades_fire_top_keywords.png",
-        len(posts),
-    )
+    _plot_wordcloud(frequencies, FIGURE_DIR / "palisades_fire_keyword_wordcloud.png")
+    _plot_bars(frequency_rows, FIGURE_DIR / "palisades_fire_top_keywords.png")
 
-    print(f"Analyzed {len(posts)} hashtag-timeline posts")
-    print("Top themes:")
-    for row in concept_rows[:10]:
-        print(
-            f"  {row['rank']:>2}. {row['keyword']}: "
-            f"{row['post_count']} posts ({row['post_share_percent']:.1f}%)"
-        )
-    print(f"Analysis files saved to {ANALYSIS_DIR}")
-    print(f"Figures saved to {FIGURE_DIR}")
+    print("Validated 500 posts and exactly 1,500 LLM-generated keywords")
+    print("Top keywords:")
+    for row in frequency_rows[:10]:
+        print(f"  {row['rank']:>2}. {row['keyword']}: {row['frequency']}")
+    print(f"Content-analysis outputs saved to {ANALYSIS_DIR} and {FIGURE_DIR}")
 
 
 if __name__ == "__main__":

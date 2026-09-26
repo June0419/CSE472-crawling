@@ -8,6 +8,7 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+build/
 
 # Local temporary files
 tmp/
@@ -17,3 +18,9 @@ tmp/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local Gephi installation and downloaded runtime
+tools/
+gephi-*-windows-x64.exe
+gephi-install.log
+.gephi-installer-temp/

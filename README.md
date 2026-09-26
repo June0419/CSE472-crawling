@@ -69,6 +69,26 @@ python src/plot_network_previews.py
 
 `output/figures/`의 PNG는 데이터와 레이아웃을 빠르게 확인하기 위한 미리보기입니다. 최종 보고서에는 Gephi에서 서로 다른 레이아웃과 노드 크기 설정을 적용해 내보낸 이미지를 사용합니다.
 
+## 6. Gephi Toolkit으로 최종 시각화 자동 생성
+
+Gephi Desktop과 같은 엔진을 사용하는 `GephiRender.java`는 정보확산망에 ForceAtlas2, 사용자망에 Yifan Hu 레이아웃을 적용합니다. 노드 크기는 degree에 따라 조정하고, 정보확산망은 게시물 유형, 사용자망은 modularity community에 따라 색을 입힙니다.
+
+```powershell
+javac --release 17 -cp tools/gephi-toolkit-0.11.3-all.jar -d build/gephi src/GephiRender.java
+
+& "tools/Gephi-0.11.3/jre-x64/jdk-17.0.20.1+1-jre/bin/java.exe" `
+  --add-opens=java.base/java.net=ALL-UNNAMED `
+  -cp "tools/gephi-toolkit-0.11.3-all.jar;build/gephi" `
+  GephiRender information output/networks/information_diffusion.gexf output/gephi
+
+& "tools/Gephi-0.11.3/jre-x64/jdk-17.0.20.1+1-jre/bin/java.exe" `
+  --add-opens=java.base/java.net=ALL-UNNAMED `
+  -cp "tools/gephi-toolkit-0.11.3-all.jar;build/gephi" `
+  GephiRender users output/networks/user_network.gexf output/gephi
+```
+
+`output/gephi/`에는 각 네트워크의 PNG, 스타일이 포함된 GEXF, 편집 가능한 `.gephi` 프로젝트 파일이 생성됩니다. GEXF와 `.gephi`에는 모든 노드가 보존되며, 보고서용 PNG는 연결 구조를 읽기 쉽도록 degree가 0인 고립 노드만 제외합니다.
+
 Mastodon은 분산형 서비스이므로 선택한 서버가 알고 있는 게시물만 반환합니다. 목표 수량이 부족하면 관련 해시태그나 seed user를 추가하거나, 해당 사건의 게시물을 더 많이 알고 있는 서버를 사용해야 합니다.
 
 ## 공식 API 문서

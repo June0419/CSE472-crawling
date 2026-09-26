@@ -1,0 +1,7230 @@
+{
+  "metadata": {
+    "disaster_name": "2025 Palisades Fire",
+    "source_instance": "https://mastodon.social",
+    "seed_users": [
+      "ai6yr@m.ai6yr.org",
+      "ikluft@avgeek.social",
+      "kellyromanych",
+      "CA_Politics_Huddle",
+      "hollywoodreporter",
+      "deadline"
+    ],
+    "requested_count": 200,
+    "collected_count": 200,
+    "candidate_user_count": 229,
+    "users_connected_to_seeds": 128,
+    "edge_count": 170,
+    "collected_at_utc": "2026-09-26T04:06:02.186471+00:00",
+    "edge_definition": "An undirected edge connects two users when one mentioned, replied to, or reblogged the other in the collected Palisades Fire conversation.",
+    "selection_method": "Start with relevant seed accounts, expand through mention/reply/reblog relations, then fill any remaining slots with the most active authors of verified event posts."
+  },
+  "users": [
+    {
+      "id": "109321601315889133",
+      "username": "ai6yr",
+      "acct": "ai6yr@m.ai6yr.org",
+      "display_name": "AI6YR Ben",
+      "url": "https://m.ai6yr.org/@ai6yr",
+      "bot": false,
+      "locked": false,
+      "followers_count": 9587,
+      "following_count": 3723,
+      "statuses_count": 250440,
+      "seed": true,
+      "event_post_count": 236,
+      "reply_post_count": 95,
+      "mention_received_count": 166,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target",
+        "mentioned_in_event_post",
+        "seed"
+      ],
+      "degree_in_collected_graph": 91,
+      "selection_score": 849
+    },
+    {
+      "id": "109525810222134461",
+      "username": "ikluft",
+      "acct": "ikluft@avgeek.social",
+      "display_name": "Ian Kluft ✅✈️🎈🌋",
+      "url": "https://avgeek.social/@ikluft",
+      "bot": false,
+      "locked": false,
+      "followers_count": 507,
+      "following_count": 63,
+      "statuses_count": 10148,
+      "seed": true,
+      "event_post_count": 74,
+      "reply_post_count": 72,
+      "mention_received_count": 22,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target",
+        "mentioned_in_event_post",
+        "seed"
+      ],
+      "degree_in_collected_graph": 18,
+      "selection_score": 280
+    },
+    {
+      "id": "114810496607568673",
+      "username": "CA_Politics_Huddle",
+      "acct": "CA_Politics_Huddle",
+      "display_name": "California Politics Huddle",
+      "url": "https://mastodon.social/@CA_Politics_Huddle",
+      "bot": false,
+      "locked": false,
+      "followers_count": 38,
+      "following_count": 18,
+      "statuses_count": 964,
+      "seed": true,
+      "event_post_count": 54,
+      "reply_post_count": 40,
+      "mention_received_count": 40,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target",
+        "seed"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 214
+    },
+    {
+      "id": "109314719785101432",
+      "username": "kellyromanych",
+      "acct": "kellyromanych",
+      "display_name": "KellyAnn Romanych (she/her)",
+      "url": "https://mastodon.social/@kellyromanych",
+      "bot": false,
+      "locked": true,
+      "followers_count": 1043,
+      "following_count": 1060,
+      "statuses_count": 16251,
+      "seed": true,
+      "event_post_count": 60,
+      "reply_post_count": 13,
+      "mention_received_count": 4,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target",
+        "mentioned_in_event_post",
+        "seed"
+      ],
+      "degree_in_collected_graph": 4,
+      "selection_score": 98
+    },
+    {
+      "id": "110900137009049026",
+      "username": "deadline",
+      "acct": "deadline",
+      "display_name": "Deadline",
+      "url": "https://mastodon.social/@deadline",
+      "bot": true,
+      "locked": false,
+      "followers_count": 1016,
+      "following_count": 3,
+      "statuses_count": 67423,
+      "seed": true,
+      "event_post_count": 20,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "seed"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 20
+    },
+    {
+      "id": "110900324964412148",
+      "username": "hollywoodreporter",
+      "acct": "hollywoodreporter",
+      "display_name": "The Hollywood Reporter",
+      "url": "https://mastodon.social/@hollywoodreporter",
+      "bot": true,
+      "locked": false,
+      "followers_count": 1199,
+      "following_count": 3,
+      "statuses_count": 49662,
+      "seed": true,
+      "event_post_count": 20,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "seed"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 20
+    },
+    {
+      "id": "108194856164807197",
+      "username": "MsMerope",
+      "acct": "MsMerope@sfba.social",
+      "display_name": "MsMerope",
+      "url": "https://sfba.social/@MsMerope",
+      "bot": false,
+      "locked": true,
+      "followers_count": 317,
+      "following_count": 219,
+      "statuses_count": 37300,
+      "seed": false,
+      "event_post_count": 23,
+      "reply_post_count": 23,
+      "mention_received_count": 11,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 4,
+      "selection_score": 95
+    },
+    {
+      "id": "109362756966520946",
+      "username": "BakerRL75",
+      "acct": "BakerRL75@m.ai6yr.org",
+      "display_name": "BakersRelay",
+      "url": "https://m.ai6yr.org/@BakerRL75",
+      "bot": false,
+      "locked": true,
+      "followers_count": 529,
+      "following_count": 284,
+      "statuses_count": 121330,
+      "seed": false,
+      "event_post_count": 35,
+      "reply_post_count": 12,
+      "mention_received_count": 7,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target",
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 9,
+      "selection_score": 82
+    },
+    {
+      "id": "109277637336177593",
+      "username": "jeridansky",
+      "acct": "jeridansky@sfba.social",
+      "display_name": "Jeri Dansky",
+      "url": "https://sfba.social/@jeridansky",
+      "bot": false,
+      "locked": false,
+      "followers_count": 2103,
+      "following_count": 605,
+      "statuses_count": 43689,
+      "seed": false,
+      "event_post_count": 9,
+      "reply_post_count": 7,
+      "mention_received_count": 16,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 5,
+      "selection_score": 60
+    },
+    {
+      "id": "109364548884359930",
+      "username": "MiBaWi",
+      "acct": "MiBaWi@m.ai6yr.org",
+      "display_name": "Michael Barthel / MiBaWi",
+      "url": "https://m.ai6yr.org/@MiBaWi",
+      "bot": false,
+      "locked": false,
+      "followers_count": 620,
+      "following_count": 169,
+      "statuses_count": 7809,
+      "seed": false,
+      "event_post_count": 18,
+      "reply_post_count": 4,
+      "mention_received_count": 4,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target",
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 4,
+      "selection_score": 38
+    },
+    {
+      "id": "109679802491186088",
+      "username": "JohnJBurnsIII",
+      "acct": "JohnJBurnsIII@kzoo.to",
+      "display_name": "John Burns",
+      "url": "https://kzoo.to/@JohnJBurnsIII",
+      "bot": false,
+      "locked": false,
+      "followers_count": 187,
+      "following_count": 206,
+      "statuses_count": 14927,
+      "seed": false,
+      "event_post_count": 5,
+      "reply_post_count": 5,
+      "mention_received_count": 9,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 36
+    },
+    {
+      "id": "109544056586069897",
+      "username": "Leighton",
+      "acct": "Leighton@avgeek.social",
+      "display_name": "Leighton",
+      "url": "https://avgeek.social/@Leighton",
+      "bot": false,
+      "locked": false,
+      "followers_count": 36,
+      "following_count": 104,
+      "statuses_count": 143,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 14,
+      "discovery_methods": [
+        "mentioned_in_event_post",
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 4,
+      "selection_score": 35
+    },
+    {
+      "id": "109366550461584397",
+      "username": "exador23",
+      "acct": "exador23@m.ai6yr.org",
+      "display_name": "Hippy Steve",
+      "url": "https://m.ai6yr.org/@exador23",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1090,
+      "following_count": 251,
+      "statuses_count": 13855,
+      "seed": false,
+      "event_post_count": 7,
+      "reply_post_count": 5,
+      "mention_received_count": 6,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 5,
+      "selection_score": 34
+    },
+    {
+      "id": "111270616296004000",
+      "username": "camless",
+      "acct": "camless@m.ai6yr.org",
+      "display_name": "Cadmus",
+      "url": "https://m.ai6yr.org/@camless",
+      "bot": false,
+      "locked": false,
+      "followers_count": 582,
+      "following_count": 473,
+      "statuses_count": 5769,
+      "seed": false,
+      "event_post_count": 5,
+      "reply_post_count": 5,
+      "mention_received_count": 6,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 4,
+      "selection_score": 31
+    },
+    {
+      "id": "109565536948024629",
+      "username": "kevinrns",
+      "acct": "kevinrns@mstdn.social",
+      "display_name": "Kevin Russell",
+      "url": "https://mstdn.social/@kevinrns",
+      "bot": false,
+      "locked": false,
+      "followers_count": 3010,
+      "following_count": 4906,
+      "statuses_count": 124081,
+      "seed": false,
+      "event_post_count": 6,
+      "reply_post_count": 6,
+      "mention_received_count": 4,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 28
+    },
+    {
+      "id": "109088011068906528",
+      "username": "frank",
+      "acct": "frank@f.reun.de",
+      "display_name": "Frank 🛰️🛩️🪂⛵🛵🎿🔭",
+      "url": "https://f.reun.de/@frank",
+      "bot": false,
+      "locked": false,
+      "followers_count": 179,
+      "following_count": 737,
+      "statuses_count": 67,
+      "seed": false,
+      "event_post_count": 4,
+      "reply_post_count": 4,
+      "mention_received_count": 4,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 23
+    },
+    {
+      "id": "112170269206349103",
+      "username": "meganL",
+      "acct": "meganL@mas.to",
+      "display_name": "Megan Lynch (she/her)",
+      "url": "https://mas.to/@meganL",
+      "bot": false,
+      "locked": true,
+      "followers_count": 288,
+      "following_count": 915,
+      "statuses_count": 28778,
+      "seed": false,
+      "event_post_count": 5,
+      "reply_post_count": 5,
+      "mention_received_count": 3,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 23
+    },
+    {
+      "id": "108209993019225688",
+      "username": "rustoleumlove",
+      "acct": "rustoleumlove@mastodon.online",
+      "display_name": "Anne Ominous",
+      "url": "https://mastodon.online/@rustoleumlove",
+      "bot": false,
+      "locked": false,
+      "followers_count": 994,
+      "following_count": 487,
+      "statuses_count": 18007,
+      "seed": false,
+      "event_post_count": 4,
+      "reply_post_count": 4,
+      "mention_received_count": 4,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 23
+    },
+    {
+      "id": "109308055880859866",
+      "username": "bgrinter",
+      "acct": "bgrinter@mastodon.sdf.org",
+      "display_name": "Brian Grinter",
+      "url": "https://mastodon.sdf.org/@bgrinter",
+      "bot": false,
+      "locked": false,
+      "followers_count": 421,
+      "following_count": 336,
+      "statuses_count": 16960,
+      "seed": false,
+      "event_post_count": 4,
+      "reply_post_count": 4,
+      "mention_received_count": 3,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 20
+    },
+    {
+      "id": "109462894504903209",
+      "username": "EugestShirley",
+      "acct": "EugestShirley@m.ai6yr.org",
+      "display_name": "Shirley Eugest",
+      "url": "https://m.ai6yr.org/@EugestShirley",
+      "bot": false,
+      "locked": false,
+      "followers_count": 297,
+      "following_count": 726,
+      "statuses_count": 7059,
+      "seed": false,
+      "event_post_count": 4,
+      "reply_post_count": 4,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 19
+    },
+    {
+      "id": "110240458469934942",
+      "username": "TanyaGKasim",
+      "acct": "TanyaGKasim",
+      "display_name": "Tanya Kasim VOTED",
+      "url": "https://mastodon.social/@TanyaGKasim",
+      "bot": false,
+      "locked": false,
+      "followers_count": 30,
+      "following_count": 37,
+      "statuses_count": 1585,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 3,
+      "mention_received_count": 3,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 4,
+      "selection_score": 19
+    },
+    {
+      "id": "110433002329275149",
+      "username": "mappingsupport",
+      "acct": "mappingsupport@m.ai6yr.org",
+      "display_name": "Joseph Elfelt",
+      "url": "https://m.ai6yr.org/@mappingsupport",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1431,
+      "following_count": 532,
+      "statuses_count": 5404,
+      "seed": false,
+      "event_post_count": 8,
+      "reply_post_count": 1,
+      "mention_received_count": 3,
+      "discovery_methods": [
+        "event_post_author",
+        "mentioned_in_event_post",
+        "reply_target",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 18
+    },
+    {
+      "id": "109303849360164627",
+      "username": "BenAveling",
+      "acct": "BenAveling@mastodon.ie",
+      "display_name": "Ben Aveling",
+      "url": "https://mastodon.ie/@BenAveling",
+      "bot": false,
+      "locked": false,
+      "followers_count": 119,
+      "following_count": 159,
+      "statuses_count": 3315,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 3,
+      "mention_received_count": 3,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 17
+    },
+    {
+      "id": "113427093838958172",
+      "username": "cvwarren",
+      "acct": "cvwarren@m.ai6yr.org",
+      "display_name": "Colin Warren",
+      "url": "https://m.ai6yr.org/@cvwarren",
+      "bot": false,
+      "locked": false,
+      "followers_count": 117,
+      "following_count": 292,
+      "statuses_count": 6607,
+      "seed": false,
+      "event_post_count": 4,
+      "reply_post_count": 4,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 17
+    },
+    {
+      "id": "113867080811525587",
+      "username": "MakerAndBakerDesigns",
+      "acct": "MakerAndBakerDesigns@pixelfed.social",
+      "display_name": "Steve and Kristen",
+      "url": "https://pixelfed.social/MakerAndBakerDesigns",
+      "bot": false,
+      "locked": false,
+      "followers_count": 22,
+      "following_count": 15,
+      "statuses_count": 13,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 5,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 15
+    },
+    {
+      "id": "109521639763343689",
+      "username": "Nshrubs",
+      "acct": "Nshrubs@mstdn.social",
+      "display_name": "nshrubs",
+      "url": "https://mstdn.social/@Nshrubs",
+      "bot": false,
+      "locked": false,
+      "followers_count": 337,
+      "following_count": 307,
+      "statuses_count": 19512,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 3,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 15
+    },
+    {
+      "id": "109258025387991967",
+      "username": "sadele2",
+      "acct": "sadele2",
+      "display_name": "sadele2",
+      "url": "https://mastodon.social/@sadele2",
+      "bot": false,
+      "locked": false,
+      "followers_count": 194,
+      "following_count": 709,
+      "statuses_count": 20941,
+      "seed": false,
+      "event_post_count": 7,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 14
+    },
+    {
+      "id": "113976417919345667",
+      "username": "alienghic",
+      "acct": "alienghic@timeloop.cafe",
+      "display_name": "Diane",
+      "url": "https://timeloop.cafe/@alienghic",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1431,
+      "following_count": 1184,
+      "statuses_count": 8432,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 2,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 13
+    },
+    {
+      "id": "115143444131318194",
+      "username": "ElyseMGrasso",
+      "acct": "ElyseMGrasso@wandering.shop",
+      "display_name": "Elyse M Grasso",
+      "url": "https://wandering.shop/@ElyseMGrasso",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1684,
+      "following_count": 1077,
+      "statuses_count": 85731,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 13
+    },
+    {
+      "id": "109316662041388619",
+      "username": "conejoclint",
+      "acct": "conejoclint@m.ai6yr.org",
+      "display_name": "[name] (he/him)",
+      "url": "https://m.ai6yr.org/@conejoclint",
+      "bot": false,
+      "locked": false,
+      "followers_count": 172,
+      "following_count": 143,
+      "statuses_count": 2398,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 12
+    },
+    {
+      "id": "109344637925297796",
+      "username": "easwatch",
+      "acct": "easwatch@m.ai6yr.org",
+      "display_name": "",
+      "url": "https://m.ai6yr.org/@easwatch",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 5,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 12
+    },
+    {
+      "id": "110609610495588620",
+      "username": "Finitum",
+      "acct": "Finitum",
+      "display_name": "",
+      "url": "https://mastodon.social/@Finitum",
+      "bot": false,
+      "locked": false,
+      "followers_count": 307,
+      "following_count": 628,
+      "statuses_count": 26663,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 3,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 12
+    },
+    {
+      "id": "109185347246293613",
+      "username": "fuzzface",
+      "acct": "fuzzface@epsilon-ix.masto.host",
+      "display_name": "fuzzface",
+      "url": "https://epsilon-ix.masto.host/@fuzzface",
+      "bot": false,
+      "locked": true,
+      "followers_count": 945,
+      "following_count": 1232,
+      "statuses_count": 27380,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 12
+    },
+    {
+      "id": "113918199347004515",
+      "username": "jlamoree",
+      "acct": "jlamoree@infosec.exchange",
+      "display_name": "Joseph Lamoree",
+      "url": "https://infosec.exchange/@jlamoree",
+      "bot": false,
+      "locked": false,
+      "followers_count": 101,
+      "following_count": 245,
+      "statuses_count": 910,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 12
+    },
+    {
+      "id": "109479086979583600",
+      "username": "Laukidh",
+      "acct": "Laukidh@infosec.exchange",
+      "display_name": "Laukidh",
+      "url": "https://infosec.exchange/@Laukidh",
+      "bot": false,
+      "locked": false,
+      "followers_count": 591,
+      "following_count": 1029,
+      "statuses_count": 46169,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 3,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 12
+    },
+    {
+      "id": "109371847891875579",
+      "username": "OLjohnel",
+      "acct": "OLjohnel@m.ai6yr.org",
+      "display_name": "Oly John",
+      "url": "https://m.ai6yr.org/@OLjohnel",
+      "bot": false,
+      "locked": false,
+      "followers_count": 30,
+      "following_count": 30,
+      "statuses_count": 296,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 12
+    },
+    {
+      "id": "108201864721973880",
+      "username": "stacey_campbell",
+      "acct": "stacey_campbell@aus.social",
+      "display_name": "Stacey Campbell",
+      "url": "https://aus.social/@stacey_campbell",
+      "bot": false,
+      "locked": false,
+      "followers_count": 549,
+      "following_count": 399,
+      "statuses_count": 5778,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 2,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 12
+    },
+    {
+      "id": "109521459175223917",
+      "username": "aguamielerogpz",
+      "acct": "aguamielerogpz@newsie.social",
+      "display_name": "Eider",
+      "url": "https://newsie.social/@aguamielerogpz",
+      "bot": false,
+      "locked": false,
+      "followers_count": 125,
+      "following_count": 208,
+      "statuses_count": 4105,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 1,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "mentioned_in_event_post",
+        "reply_target",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 11
+    },
+    {
+      "id": "110640739957340079",
+      "username": "deewani",
+      "acct": "deewani",
+      "display_name": "deewani",
+      "url": "https://mastodon.social/@deewani",
+      "bot": false,
+      "locked": true,
+      "followers_count": 226,
+      "following_count": 1128,
+      "statuses_count": 12026,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "mentioned_in_event_post",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 11
+    },
+    {
+      "id": "110052571791683859",
+      "username": "Roentare",
+      "acct": "Roentare",
+      "display_name": "Photo Nutter from Melbourne",
+      "url": "https://mastodon.social/@Roentare",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1233,
+      "following_count": 122,
+      "statuses_count": 2224,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 11
+    },
+    {
+      "id": "1138175",
+      "username": "Catawu",
+      "acct": "Catawu",
+      "display_name": "Cat West",
+      "url": "https://mastodon.social/@Catawu",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1253,
+      "following_count": 888,
+      "statuses_count": 98483,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 3,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 10
+    },
+    {
+      "id": "109702660873984151",
+      "username": "chris",
+      "acct": "chris@mstdn.chrisalemany.ca",
+      "display_name": "Chris Alemany🇺🇦🇨🇦🇪🇸",
+      "url": "https://mstdn.chrisalemany.ca/@chris",
+      "bot": false,
+      "locked": false,
+      "followers_count": 4453,
+      "following_count": 3360,
+      "statuses_count": 56147,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 10
+    },
+    {
+      "id": "107860226365441485",
+      "username": "griff",
+      "acct": "griff@libranet.de",
+      "display_name": "Griff Ferrell",
+      "url": "https://libranet.de/profile/griff",
+      "bot": false,
+      "locked": true,
+      "followers_count": 168,
+      "following_count": 639,
+      "statuses_count": 3438,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 9
+    },
+    {
+      "id": "111089957634114690",
+      "username": "j",
+      "acct": "j@mahalo.social",
+      "display_name": "J",
+      "url": "https://mahalo.social/@j",
+      "bot": false,
+      "locked": false,
+      "followers_count": 30,
+      "following_count": 245,
+      "statuses_count": 2372,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 9
+    },
+    {
+      "id": "109276229792401080",
+      "username": "mizblueprint",
+      "acct": "mizblueprint@mastodon.online",
+      "display_name": "mizblueprint",
+      "url": "https://mastodon.online/@mizblueprint",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1371,
+      "following_count": 1457,
+      "statuses_count": 2505,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 9
+    },
+    {
+      "id": "109300010061732719",
+      "username": "onyxraven",
+      "acct": "onyxraven@hachyderm.io",
+      "display_name": "Justin 😸",
+      "url": "https://hachyderm.io/@onyxraven",
+      "bot": false,
+      "locked": true,
+      "followers_count": 142,
+      "following_count": 394,
+      "statuses_count": 2444,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target",
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 9
+    },
+    {
+      "id": "109612954590547350",
+      "username": "quokka1",
+      "acct": "quokka1@mastodon.au",
+      "display_name": "Quokka (on the move...)",
+      "url": "https://mastodon.au/@quokka1",
+      "bot": false,
+      "locked": false,
+      "followers_count": 116,
+      "following_count": 1008,
+      "statuses_count": 6428,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 9
+    },
+    {
+      "id": "110725554214022622",
+      "username": "vogelsanglover",
+      "acct": "vogelsanglover@m.ai6yr.org",
+      "display_name": "Plucky Flower",
+      "url": "https://m.ai6yr.org/@vogelsanglover",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1,
+      "following_count": 18,
+      "statuses_count": 8,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 9
+    },
+    {
+      "id": "109361982880379903",
+      "username": "volvodadfast",
+      "acct": "volvodadfast",
+      "display_name": "Volvodadfast",
+      "url": "https://mastodon.social/@volvodadfast",
+      "bot": false,
+      "locked": false,
+      "followers_count": 4,
+      "following_count": 17,
+      "statuses_count": 287,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 9
+    },
+    {
+      "id": "109299002467373902",
+      "username": "tiamat271",
+      "acct": "tiamat271@mastodon.online",
+      "display_name": "Jenny",
+      "url": "https://mastodon.online/@tiamat271",
+      "bot": false,
+      "locked": true,
+      "followers_count": 928,
+      "following_count": 1381,
+      "statuses_count": 41428,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 8
+    },
+    {
+      "id": "109372040981377231",
+      "username": "ufwupdates",
+      "acct": "ufwupdates@union.place",
+      "display_name": "",
+      "url": "https://union.place/@ufwupdates",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 3,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 8
+    },
+    {
+      "id": "109362556345297756",
+      "username": "Barbramon1",
+      "acct": "Barbramon1@mas.to",
+      "display_name": "Barbara Monaco",
+      "url": "https://mas.to/@Barbramon1",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1872,
+      "following_count": 2184,
+      "statuses_count": 61543,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 7
+    },
+    {
+      "id": "109780588081944821",
+      "username": "bosquebill",
+      "acct": "bosquebill@techhub.social",
+      "display_name": "Bosque Bill",
+      "url": "https://techhub.social/@bosquebill",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1111,
+      "following_count": 392,
+      "statuses_count": 6148,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 7
+    },
+    {
+      "id": "110659067277544231",
+      "username": "bowlcut",
+      "acct": "bowlcut@mastodon.online",
+      "display_name": "KevinH",
+      "url": "https://mastodon.online/@bowlcut",
+      "bot": false,
+      "locked": false,
+      "followers_count": 36,
+      "following_count": 1061,
+      "statuses_count": 81,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 7
+    },
+    {
+      "id": "111685037704760083",
+      "username": "iris",
+      "acct": "iris@neuromatch.social",
+      "display_name": "Iris Young (he/they/she) (PhD)",
+      "url": "https://neuromatch.social/@iris",
+      "bot": false,
+      "locked": true,
+      "followers_count": 1664,
+      "following_count": 1824,
+      "statuses_count": 8855,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 7
+    },
+    {
+      "id": "109294986589122732",
+      "username": "JetCityStar",
+      "acct": "JetCityStar@mstdn.social",
+      "display_name": "Isaac Alexander",
+      "url": "https://mstdn.social/@JetCityStar",
+      "bot": false,
+      "locked": false,
+      "followers_count": 174,
+      "following_count": 185,
+      "statuses_count": 257,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post",
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 7
+    },
+    {
+      "id": "109320716444916965",
+      "username": "lauerhahn",
+      "acct": "lauerhahn@sfba.social",
+      "display_name": "Louise Auerhahn :propride:",
+      "url": "https://sfba.social/@lauerhahn",
+      "bot": false,
+      "locked": false,
+      "followers_count": 656,
+      "following_count": 1218,
+      "statuses_count": 6785,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 7
+    },
+    {
+      "id": "109464403869787096",
+      "username": "samhainnight",
+      "acct": "samhainnight@mstdn.social",
+      "display_name": "Samhain Night",
+      "url": "https://mstdn.social/@samhainnight",
+      "bot": false,
+      "locked": true,
+      "followers_count": 1600,
+      "following_count": 1024,
+      "statuses_count": 138941,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 7
+    },
+    {
+      "id": "109383357571366508",
+      "username": "tezoatlipoca",
+      "acct": "tezoatlipoca@mas.to",
+      "display_name": "Third spruce tree on the left",
+      "url": "https://mas.to/@tezoatlipoca",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1340,
+      "following_count": 2365,
+      "statuses_count": 18290,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 7
+    },
+    {
+      "id": "109467456996781783",
+      "username": "VATVSLPR",
+      "acct": "VATVSLPR@c.im",
+      "display_name": "Roger Moore",
+      "url": "https://c.im/@VATVSLPR",
+      "bot": false,
+      "locked": false,
+      "followers_count": 219,
+      "following_count": 134,
+      "statuses_count": 3261,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 7
+    },
+    {
+      "id": "109552629781476696",
+      "username": "violetmadder",
+      "acct": "violetmadder@kolektiva.social",
+      "display_name": "Violet Madder",
+      "url": "https://kolektiva.social/@violetmadder",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1599,
+      "following_count": 1396,
+      "statuses_count": 16934,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 7
+    },
+    {
+      "id": "109276676622445893",
+      "username": "W6KME",
+      "acct": "W6KME@mastodon.radio",
+      "display_name": "W6KME",
+      "url": "https://mastodon.radio/@W6KME",
+      "bot": false,
+      "locked": false,
+      "followers_count": 807,
+      "following_count": 340,
+      "statuses_count": 11194,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 7
+    },
+    {
+      "id": "109376883042037376",
+      "username": "bedirthan",
+      "acct": "bedirthan@dice.camp",
+      "display_name": "Dave Clark",
+      "url": "https://dice.camp/@bedirthan",
+      "bot": false,
+      "locked": false,
+      "followers_count": 611,
+      "following_count": 483,
+      "statuses_count": 12901,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "107589662702292545",
+      "username": "beka_valentine",
+      "acct": "beka_valentine@kolektiva.social",
+      "display_name": "beka valentine",
+      "url": "https://kolektiva.social/@beka_valentine",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1966,
+      "following_count": 962,
+      "statuses_count": 18380,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "109305315631888531",
+      "username": "cvvhrn",
+      "acct": "cvvhrn@sfba.social",
+      "display_name": "FreddyB Aviation Photography",
+      "url": "https://sfba.social/@cvvhrn",
+      "bot": false,
+      "locked": false,
+      "followers_count": 2284,
+      "following_count": 2197,
+      "statuses_count": 17165,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "113612925814324486",
+      "username": "darwinwoodka.bsky.social",
+      "acct": "darwinwoodka.bsky.social@bsky.brid.gy",
+      "display_name": "Darwin Woodka",
+      "url": "https://bsky.brid.gy/r/https://bsky.app/profile/darwinwoodka.bsky.social",
+      "bot": false,
+      "locked": false,
+      "followers_count": 16,
+      "following_count": 21,
+      "statuses_count": 8,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "110662702605265128",
+      "username": "driusan",
+      "acct": "driusan@doomscroller.social",
+      "display_name": "D",
+      "url": "https://doomscroller.social/@driusan",
+      "bot": false,
+      "locked": false,
+      "followers_count": 381,
+      "following_count": 639,
+      "statuses_count": 13512,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "111210117932795043",
+      "username": "fluids_guru",
+      "acct": "fluids_guru@kolektiva.social",
+      "display_name": "fluids_guru",
+      "url": "https://kolektiva.social/@fluids_guru",
+      "bot": false,
+      "locked": false,
+      "followers_count": 133,
+      "following_count": 272,
+      "statuses_count": 1776,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "113851762197556170",
+      "username": "Mark_Harbinger",
+      "acct": "Mark_Harbinger",
+      "display_name": "Mark Harbinger",
+      "url": "https://mastodon.social/@Mark_Harbinger",
+      "bot": false,
+      "locked": false,
+      "followers_count": 156,
+      "following_count": 128,
+      "statuses_count": 1917,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "113868184045370311",
+      "username": "ottominati",
+      "acct": "ottominati@mstdn.ca",
+      "display_name": "Otto W",
+      "url": "https://mstdn.ca/@ottominati",
+      "bot": false,
+      "locked": false,
+      "followers_count": 73,
+      "following_count": 70,
+      "statuses_count": 1018,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "109268980483243765",
+      "username": "simonbp",
+      "acct": "simonbp@social.linux.pizza",
+      "display_name": "simonbp",
+      "url": "https://social.linux.pizza/@simonbp",
+      "bot": false,
+      "locked": false,
+      "followers_count": 566,
+      "following_count": 394,
+      "statuses_count": 7303,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "111256716075028098",
+      "username": "CassandraVert",
+      "acct": "CassandraVert@indieweb.social",
+      "display_name": "CassandraVert",
+      "url": "https://indieweb.social/@CassandraVert",
+      "bot": false,
+      "locked": false,
+      "followers_count": 866,
+      "following_count": 1089,
+      "statuses_count": 10523,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 5
+    },
+    {
+      "id": "109304935971837337",
+      "username": "coolandnormal",
+      "acct": "coolandnormal@aus.social",
+      "display_name": "Birdhouse in Your [Redacted]",
+      "url": "https://aus.social/@coolandnormal",
+      "bot": false,
+      "locked": true,
+      "followers_count": 394,
+      "following_count": 268,
+      "statuses_count": 26049,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 5
+    },
+    {
+      "id": "109362316721172503",
+      "username": "LPerry2",
+      "acct": "LPerry2",
+      "display_name": "Cookiefiend",
+      "url": "https://mastodon.social/@LPerry2",
+      "bot": false,
+      "locked": false,
+      "followers_count": 283,
+      "following_count": 324,
+      "statuses_count": 3184,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 5
+    },
+    {
+      "id": "113049439227521302",
+      "username": "mwguy",
+      "acct": "mwguy@infosec.exchange",
+      "display_name": "mwguy",
+      "url": "https://infosec.exchange/@mwguy",
+      "bot": false,
+      "locked": false,
+      "followers_count": 22,
+      "following_count": 91,
+      "statuses_count": 831,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 5
+    },
+    {
+      "id": "109390409229717187",
+      "username": "NewtonMark",
+      "acct": "NewtonMark@eigenmagic.net",
+      "display_name": "",
+      "url": "https://eigenmagic.net/@NewtonMark",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 5
+    },
+    {
+      "id": "110640570007258764",
+      "username": "oldjoestalin",
+      "acct": "oldjoestalin",
+      "display_name": "Old Joe Stalin",
+      "url": "https://mastodon.social/@oldjoestalin",
+      "bot": false,
+      "locked": false,
+      "followers_count": 32,
+      "following_count": 146,
+      "statuses_count": 286,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 5
+    },
+    {
+      "id": "109537254594856796",
+      "username": "rpmik",
+      "acct": "rpmik@avgeek.social",
+      "display_name": "Ryan M",
+      "url": "https://avgeek.social/@rpmik",
+      "bot": false,
+      "locked": false,
+      "followers_count": 603,
+      "following_count": 1195,
+      "statuses_count": 1223,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 5
+    },
+    {
+      "id": "110897461087270374",
+      "username": "TrickTim",
+      "acct": "TrickTim@mstdn.social",
+      "display_name": "TrickTim",
+      "url": "https://mstdn.social/@TrickTim",
+      "bot": false,
+      "locked": true,
+      "followers_count": 142,
+      "following_count": 418,
+      "statuses_count": 6334,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 5
+    },
+    {
+      "id": "58528",
+      "username": "woozle",
+      "acct": "woozle@toot.cat",
+      "display_name": "Woozle Hypertwin",
+      "url": "https://toot.cat/@woozle",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1953,
+      "following_count": 688,
+      "statuses_count": 42822,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 5
+    },
+    {
+      "id": "792811",
+      "username": "c_merriweather",
+      "acct": "c_merriweather@social.linux.pizza",
+      "display_name": "Kinene⭐🐻",
+      "url": "https://social.linux.pizza/@c_merriweather",
+      "bot": false,
+      "locked": false,
+      "followers_count": 369,
+      "following_count": 248,
+      "statuses_count": 24620,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "108193759693986953",
+      "username": "cainmark",
+      "acct": "cainmark@mstdn.social",
+      "display_name": "Cainmark Does Not Comply 🚲",
+      "url": "https://mstdn.social/@cainmark",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1934,
+      "following_count": 1181,
+      "statuses_count": 158857,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "113063102955050997",
+      "username": "chunshek",
+      "acct": "chunshek@prettyaweso.me",
+      "display_name": "Chunshek :HomestarRunning:",
+      "url": "https://prettyaweso.me/@chunshek",
+      "bot": false,
+      "locked": true,
+      "followers_count": 333,
+      "following_count": 288,
+      "statuses_count": 5537,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "113371204894683573",
+      "username": "cobalt123",
+      "acct": "cobalt123@beige.party",
+      "display_name": "cobalt",
+      "url": "https://beige.party/@cobalt123",
+      "bot": false,
+      "locked": true,
+      "followers_count": 1284,
+      "following_count": 3758,
+      "statuses_count": 8925,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109327860275149734",
+      "username": "ColesStreetPothole",
+      "acct": "ColesStreetPothole@weatherishappening.network",
+      "display_name": "Coles Street Pothole",
+      "url": "https://weatherishappening.network/@ColesStreetPothole",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1312,
+      "following_count": 1211,
+      "statuses_count": 50830,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109399233825895825",
+      "username": "dave_andersen",
+      "acct": "dave_andersen@hachyderm.io",
+      "display_name": "David Andersen",
+      "url": "https://hachyderm.io/@dave_andersen",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1265,
+      "following_count": 566,
+      "statuses_count": 4078,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109797278252818197",
+      "username": "ErrolNZ",
+      "acct": "ErrolNZ@mastodon.nz",
+      "display_name": "Errol Cavit",
+      "url": "https://mastodon.nz/@ErrolNZ",
+      "bot": false,
+      "locked": false,
+      "followers_count": 363,
+      "following_count": 436,
+      "statuses_count": 10375,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109340625414220464",
+      "username": "frogglin",
+      "acct": "frogglin@theblower.au",
+      "display_name": "Lyn",
+      "url": "https://theblower.au/@frogglin",
+      "bot": false,
+      "locked": false,
+      "followers_count": 602,
+      "following_count": 155,
+      "statuses_count": 22025,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109367865443855216",
+      "username": "gooser3000",
+      "acct": "gooser3000",
+      "display_name": "Knut Branson",
+      "url": "https://mastodon.social/@gooser3000",
+      "bot": false,
+      "locked": false,
+      "followers_count": 559,
+      "following_count": 699,
+      "statuses_count": 20482,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "111109330643883082",
+      "username": "GuyDudeman",
+      "acct": "GuyDudeman@beige.party",
+      "display_name": "G.I. Robot :bc:",
+      "url": "https://beige.party/@GuyDudeman",
+      "bot": false,
+      "locked": false,
+      "followers_count": 710,
+      "following_count": 1352,
+      "statuses_count": 6347,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109317493120671996",
+      "username": "hisstogramma",
+      "acct": "hisstogramma@m.ai6yr.org",
+      "display_name": "Hisstogramma",
+      "url": "https://m.ai6yr.org/@hisstogramma",
+      "bot": false,
+      "locked": true,
+      "followers_count": 306,
+      "following_count": 522,
+      "statuses_count": 1373,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109560317417390766",
+      "username": "inoru_no_hoshi",
+      "acct": "inoru_no_hoshi@blorbo.social",
+      "display_name": "Inoru",
+      "url": "https://blorbo.social/@inoru_no_hoshi",
+      "bot": false,
+      "locked": false,
+      "followers_count": 105,
+      "following_count": 45,
+      "statuses_count": 6020,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109419274002643262",
+      "username": "Irishmasms",
+      "acct": "Irishmasms@defcon.social",
+      "display_name": "IrishMASMS",
+      "url": "https://defcon.social/@Irishmasms",
+      "bot": false,
+      "locked": true,
+      "followers_count": 124,
+      "following_count": 292,
+      "statuses_count": 8739,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109910403173574791",
+      "username": "JoeBeam",
+      "acct": "JoeBeam",
+      "display_name": "Joe Beam",
+      "url": "https://mastodon.social/@JoeBeam",
+      "bot": false,
+      "locked": false,
+      "followers_count": 180,
+      "following_count": 337,
+      "statuses_count": 6065,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109373761760024781",
+      "username": "K8tyCA",
+      "acct": "K8tyCA@m.ai6yr.org",
+      "display_name": "K8tyCA",
+      "url": "https://m.ai6yr.org/@K8tyCA",
+      "bot": false,
+      "locked": false,
+      "followers_count": 67,
+      "following_count": 123,
+      "statuses_count": 2112,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109752047061675651",
+      "username": "Kathmandu",
+      "acct": "Kathmandu@stranger.social",
+      "display_name": "Kathmandu",
+      "url": "https://stranger.social/@Kathmandu",
+      "bot": false,
+      "locked": true,
+      "followers_count": 213,
+      "following_count": 193,
+      "statuses_count": 8585,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "114349784347156138",
+      "username": "kusuriya",
+      "acct": "kusuriya@masto.hackers.town",
+      "display_name": "Chapo (kk7hut)",
+      "url": "https://masto.hackers.town/@kusuriya",
+      "bot": false,
+      "locked": false,
+      "followers_count": 349,
+      "following_count": 251,
+      "statuses_count": 1177,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "108194890308088987",
+      "username": "Lazarou",
+      "acct": "Lazarou",
+      "display_name": "Lazarou Monkey Terror 🚀💙🌈",
+      "url": "https://mastodon.social/@Lazarou",
+      "bot": false,
+      "locked": false,
+      "followers_count": 4683,
+      "following_count": 5735,
+      "statuses_count": 498616,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109525270675236513",
+      "username": "Lyle",
+      "acct": "Lyle@cville.online",
+      "display_name": "Lyle Solla-Yates",
+      "url": "https://cville.online/@Lyle",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1478,
+      "following_count": 3044,
+      "statuses_count": 16821,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109521618249568229",
+      "username": "MLE_online",
+      "acct": "MLE_online@social.afront.org",
+      "display_name": "Emily Velasco",
+      "url": "https://social.afront.org/@MLE_online",
+      "bot": false,
+      "locked": false,
+      "followers_count": 5384,
+      "following_count": 468,
+      "statuses_count": 41024,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109276007211588752",
+      "username": "msbellows",
+      "acct": "msbellows@c.im",
+      "display_name": "M.S. Bellows, Jr.",
+      "url": "https://c.im/@msbellows",
+      "bot": false,
+      "locked": false,
+      "followers_count": 2453,
+      "following_count": 1671,
+      "statuses_count": 84414,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "108138122207700955",
+      "username": "orci",
+      "acct": "orci",
+      "display_name": "J.R. Orci",
+      "url": "https://mastodon.social/@orci",
+      "bot": false,
+      "locked": false,
+      "followers_count": 2539,
+      "following_count": 589,
+      "statuses_count": 4872,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "412496",
+      "username": "pesh",
+      "acct": "pesh",
+      "display_name": "Peter Saathoff-Harshfield",
+      "url": "https://mastodon.social/@pesh",
+      "bot": false,
+      "locked": false,
+      "followers_count": 203,
+      "following_count": 235,
+      "statuses_count": 1420,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "112112233954551289",
+      "username": "pixelpusher220",
+      "acct": "pixelpusher220@dmv.community",
+      "display_name": "Pusher of Pixels",
+      "url": "https://dmv.community/@pixelpusher220",
+      "bot": false,
+      "locked": false,
+      "followers_count": 839,
+      "following_count": 834,
+      "statuses_count": 14653,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "113809573080680866",
+      "username": "poisonpunk",
+      "acct": "poisonpunk@kolektiva.social",
+      "display_name": "poison punk",
+      "url": "https://kolektiva.social/@poisonpunk",
+      "bot": false,
+      "locked": false,
+      "followers_count": 407,
+      "following_count": 319,
+      "statuses_count": 7193,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109948963947983998",
+      "username": "riogreyhound",
+      "acct": "riogreyhound",
+      "display_name": "Trudy",
+      "url": "https://mastodon.social/@riogreyhound",
+      "bot": false,
+      "locked": false,
+      "followers_count": 19,
+      "following_count": 36,
+      "statuses_count": 323,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109319765150489643",
+      "username": "scerruti",
+      "acct": "scerruti@csed.social",
+      "display_name": "Stephen Cerruti",
+      "url": "https://csed.social/@scerruti",
+      "bot": false,
+      "locked": false,
+      "followers_count": 207,
+      "following_count": 238,
+      "statuses_count": 1438,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "113477804345261526",
+      "username": "skiswm.bsky.social",
+      "acct": "skiswm.bsky.social@bsky.brid.gy",
+      "display_name": "Just Me",
+      "url": "https://bsky.brid.gy/r/https://bsky.app/profile/skiswm.bsky.social",
+      "bot": false,
+      "locked": false,
+      "followers_count": 10,
+      "following_count": 4,
+      "statuses_count": 3,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109205963723515372",
+      "username": "skua",
+      "acct": "skua",
+      "display_name": "skua",
+      "url": "https://mastodon.social/@skua",
+      "bot": false,
+      "locked": true,
+      "followers_count": 618,
+      "following_count": 961,
+      "statuses_count": 35365,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109391045419718303",
+      "username": "SpaceLifeForm",
+      "acct": "SpaceLifeForm@infosec.exchange",
+      "display_name": "SpaceLifeForm",
+      "url": "https://infosec.exchange/@SpaceLifeForm",
+      "bot": false,
+      "locked": true,
+      "followers_count": 1027,
+      "following_count": 2778,
+      "statuses_count": 45167,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "111187643456808385",
+      "username": "steter",
+      "acct": "steter@mastodon.stevesworld.co",
+      "display_name": "Steve's Place",
+      "url": "https://mastodon.stevesworld.co/@steter",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1583,
+      "following_count": 2228,
+      "statuses_count": 164674,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "113307464583381557",
+      "username": "TENET_CDN",
+      "acct": "TENET_CDN",
+      "display_name": "Jeffandthekid",
+      "url": "https://mastodon.social/@TENET_CDN",
+      "bot": false,
+      "locked": false,
+      "followers_count": 187,
+      "following_count": 321,
+      "statuses_count": 9304,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109323020032812696",
+      "username": "tito_swineflu",
+      "acct": "tito_swineflu@sfba.social",
+      "display_name": "Tito Swineflu",
+      "url": "https://sfba.social/@tito_swineflu",
+      "bot": false,
+      "locked": false,
+      "followers_count": 253,
+      "following_count": 156,
+      "statuses_count": 6736,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "111012175813159771",
+      "username": "Tom",
+      "acct": "Tom@moule.world",
+      "display_name": "Tom :TomSkate:",
+      "url": "https://mastodon.moule.world/@Tom",
+      "bot": false,
+      "locked": false,
+      "followers_count": 37,
+      "following_count": 25,
+      "statuses_count": 110,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "117169473084457668",
+      "username": "Zelda",
+      "acct": "Zelda@m.ai6yr.org",
+      "display_name": "Zelda",
+      "url": "https://m.ai6yr.org/@Zelda",
+      "bot": false,
+      "locked": false,
+      "followers_count": 31,
+      "following_count": 186,
+      "statuses_count": 630,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "1272131",
+      "username": "zl2tod",
+      "acct": "zl2tod@mastodon.online",
+      "display_name": "zl2tod",
+      "url": "https://mastodon.online/@zl2tod",
+      "bot": false,
+      "locked": false,
+      "followers_count": 399,
+      "following_count": 806,
+      "statuses_count": 21202,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "110266162634306901",
+      "username": "arstechnica",
+      "acct": "arstechnica",
+      "display_name": "",
+      "url": "https://mastodon.social/@arstechnica",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "109396635895543644",
+      "username": "astroptere",
+      "acct": "astroptere@masto.ai",
+      "display_name": "",
+      "url": "https://masto.ai/@astroptere",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "110253827558017276",
+      "username": "calfire_bot",
+      "acct": "calfire_bot@m.ai6yr.org",
+      "display_name": "",
+      "url": "https://m.ai6yr.org/@calfire_bot",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "113200132295857967",
+      "username": "cbcnews",
+      "acct": "cbcnews@flipboard.com",
+      "display_name": "",
+      "url": "https://flipboard.com/@cbcnews",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "109366841555947654",
+      "username": "DEDGirl",
+      "acct": "DEDGirl@mastodon.world",
+      "display_name": "",
+      "url": "https://mastodon.world/@DEDGirl",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "111069595970574659",
+      "username": "FinchHaven",
+      "acct": "FinchHaven@sfba.social",
+      "display_name": "",
+      "url": "https://sfba.social/@FinchHaven",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "109366705982844485",
+      "username": "ianjames",
+      "acct": "ianjames@journa.host",
+      "display_name": "",
+      "url": "https://journa.host/@ianjames",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "109786748962788539",
+      "username": "LAFD_bot",
+      "acct": "LAFD_bot@m.ai6yr.org",
+      "display_name": "",
+      "url": "https://m.ai6yr.org/@LAFD_bot",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "112854264853553638",
+      "username": "LATimes",
+      "acct": "LATimes@flipboard.com",
+      "display_name": "",
+      "url": "https://flipboard.com/@LATimes",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "109300908322558834",
+      "username": "luckytran",
+      "acct": "luckytran@med-mastodon.com",
+      "display_name": "",
+      "url": "https://med-mastodon.com/@luckytran",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "109333705137753806",
+      "username": "sciguyspace",
+      "acct": "sciguyspace@journa.host",
+      "display_name": "",
+      "url": "https://journa.host/@sciguyspace",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "113292360995151258",
+      "username": "stormchaser_bot",
+      "acct": "stormchaser_bot@m.ai6yr.org",
+      "display_name": "",
+      "url": "https://m.ai6yr.org/@stormchaser_bot",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "110088287007315114",
+      "username": "appassionato",
+      "acct": "appassionato",
+      "display_name": "earthling",
+      "url": "https://mastodon.social/@appassionato",
+      "bot": false,
+      "locked": false,
+      "followers_count": 2783,
+      "following_count": 167,
+      "statuses_count": 57633,
+      "seed": false,
+      "event_post_count": 14,
+      "reply_post_count": 13,
+      "mention_received_count": 2,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target",
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 45
+    },
+    {
+      "id": "109526643276401942",
+      "username": "MrWtr0102",
+      "acct": "MrWtr0102@mastodon.sdf.org",
+      "display_name": "MrWtr0102",
+      "url": "https://mastodon.sdf.org/@MrWtr0102",
+      "bot": false,
+      "locked": false,
+      "followers_count": 192,
+      "following_count": 491,
+      "statuses_count": 3967,
+      "seed": false,
+      "event_post_count": 33,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 33
+    },
+    {
+      "id": "109569486384786760",
+      "username": "jberry",
+      "acct": "jberry@m.ai6yr.org",
+      "display_name": "jberry",
+      "url": "https://m.ai6yr.org/@jberry",
+      "bot": false,
+      "locked": false,
+      "followers_count": 17,
+      "following_count": 12,
+      "statuses_count": 742,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 2,
+      "mention_received_count": 4,
+      "discovery_methods": [
+        "event_post_author",
+        "mentioned_in_event_post",
+        "reply_target",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 3,
+      "selection_score": 18
+    },
+    {
+      "id": "1156890",
+      "username": "adamasnemesis",
+      "acct": "adamasnemesis@social.adamasnemesis.com",
+      "display_name": "Adamas Nemesis",
+      "url": "https://social.adamasnemesis.com/@adamasnemesis",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1074,
+      "following_count": 209,
+      "statuses_count": 9539,
+      "seed": false,
+      "event_post_count": 8,
+      "reply_post_count": 4,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 16
+    },
+    {
+      "id": "109303988606874604",
+      "username": "Nonilex",
+      "acct": "Nonilex@masto.ai",
+      "display_name": "Nonilex",
+      "url": "https://masto.ai/@Nonilex",
+      "bot": false,
+      "locked": false,
+      "followers_count": 10564,
+      "following_count": 2666,
+      "statuses_count": 42509,
+      "seed": false,
+      "event_post_count": 6,
+      "reply_post_count": 5,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 16
+    },
+    {
+      "id": "109237602809603384",
+      "username": "patrickokeefe",
+      "acct": "patrickokeefe",
+      "display_name": "Patrick O'Keefe",
+      "url": "https://mastodon.social/@patrickokeefe",
+      "bot": false,
+      "locked": false,
+      "followers_count": 784,
+      "following_count": 756,
+      "statuses_count": 1482,
+      "seed": false,
+      "event_post_count": 5,
+      "reply_post_count": 4,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 13
+    },
+    {
+      "id": "110811919976627606",
+      "username": "danwolfstone",
+      "acct": "danwolfstone@mstdn.social",
+      "display_name": "Dan Wolfstone",
+      "url": "https://mstdn.social/@danwolfstone",
+      "bot": false,
+      "locked": false,
+      "followers_count": 50,
+      "following_count": 84,
+      "statuses_count": 151,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 9
+    },
+    {
+      "id": "109293849404033510",
+      "username": "godzero",
+      "acct": "godzero@sfba.social",
+      "display_name": "gz",
+      "url": "https://sfba.social/@godzero",
+      "bot": false,
+      "locked": false,
+      "followers_count": 212,
+      "following_count": 173,
+      "statuses_count": 15047,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 2,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 9
+    },
+    {
+      "id": "114547838217905149",
+      "username": "mohammedEldeeb",
+      "acct": "mohammedEldeeb",
+      "display_name": "Mohammed Eldeeb",
+      "url": "https://mastodon.social/@mohammedEldeeb",
+      "bot": false,
+      "locked": false,
+      "followers_count": 15,
+      "following_count": 30,
+      "statuses_count": 57,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 2,
+      "selection_score": 8
+    },
+    {
+      "id": "109302595533822130",
+      "username": "ginaintheburg",
+      "acct": "ginaintheburg@mastodon.world",
+      "display_name": "Gina Intheburg 🇺🇦 🌻 🥥🌴",
+      "url": "https://mastodon.world/@ginaintheburg",
+      "bot": false,
+      "locked": false,
+      "followers_count": 951,
+      "following_count": 1858,
+      "statuses_count": 20062,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 2,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 7
+    },
+    {
+      "id": "109363062233496348",
+      "username": "cmgrowell",
+      "acct": "cmgrowell@m.ai6yr.org",
+      "display_name": "cmgrowell",
+      "url": "https://m.ai6yr.org/@cmgrowell",
+      "bot": false,
+      "locked": false,
+      "followers_count": 141,
+      "following_count": 286,
+      "statuses_count": 1043,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 6
+    },
+    {
+      "id": "115888887249798032",
+      "username": "sassylady4freedom.bsky.social",
+      "acct": "sassylady4freedom.bsky.social@bsky.brid.gy",
+      "display_name": "Lady4Freedom",
+      "url": "https://bsky.brid.gy/r/https://bsky.app/profile/sassylady4freedom.bsky.social",
+      "bot": false,
+      "locked": false,
+      "followers_count": 9,
+      "following_count": 98,
+      "statuses_count": 50,
+      "seed": false,
+      "event_post_count": 6,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 6
+    },
+    {
+      "id": "113529111147117132",
+      "username": "UnionizedNetizen",
+      "acct": "UnionizedNetizen@union.place",
+      "display_name": "Unionized Netizen",
+      "url": "https://union.place/@UnionizedNetizen",
+      "bot": false,
+      "locked": false,
+      "followers_count": 36,
+      "following_count": 97,
+      "statuses_count": 236,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 5
+    },
+    {
+      "id": "109254519388773773",
+      "username": "Alex_Verbeek",
+      "acct": "Alex_Verbeek",
+      "display_name": "Alex Verbeek",
+      "url": "https://mastodon.social/@Alex_Verbeek",
+      "bot": false,
+      "locked": false,
+      "followers_count": 5900,
+      "following_count": 202,
+      "statuses_count": 563,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "event_post_author",
+        "mentioned_in_event_post",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109366041770161475",
+      "username": "citydogsandcats",
+      "acct": "citydogsandcats@c.im",
+      "display_name": "rena",
+      "url": "https://c.im/@citydogsandcats",
+      "bot": false,
+      "locked": true,
+      "followers_count": 3,
+      "following_count": 7,
+      "statuses_count": 497,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "114141745690997283",
+      "username": "ClaudiaWinkelmann71",
+      "acct": "ClaudiaWinkelmann71@pixelfed.social",
+      "display_name": "LearnAndUnlearn",
+      "url": "https://pixelfed.social/ClaudiaWinkelmann71",
+      "bot": false,
+      "locked": false,
+      "followers_count": 19,
+      "following_count": 35,
+      "statuses_count": 5,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "113832948745444828",
+      "username": "FeloniousPunk",
+      "acct": "FeloniousPunk@beige.party",
+      "display_name": "FeloniousPunk",
+      "url": "https://beige.party/@FeloniousPunk",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1245,
+      "following_count": 1133,
+      "statuses_count": 24129,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "110875475891251931",
+      "username": "JTO_is_Typing",
+      "acct": "JTO_is_Typing@mstdn.games",
+      "display_name": "JTO is Typing",
+      "url": "https://mstdn.games/@JTO_is_Typing",
+      "bot": false,
+      "locked": true,
+      "followers_count": 46,
+      "following_count": 101,
+      "statuses_count": 4488,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author",
+        "reply_target"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 4
+    },
+    {
+      "id": "109373992709176037",
+      "username": "Mikasa4231",
+      "acct": "Mikasa4231@universeodon.com",
+      "display_name": "Mikasa4231",
+      "url": "https://universeodon.com/@Mikasa4231",
+      "bot": false,
+      "locked": false,
+      "followers_count": 49,
+      "following_count": 20,
+      "statuses_count": 5465,
+      "seed": false,
+      "event_post_count": 4,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 4
+    },
+    {
+      "id": "109430712040937231",
+      "username": "MollyNYC",
+      "acct": "MollyNYC@mstdn.social",
+      "display_name": "MollyNYC",
+      "url": "https://mstdn.social/@MollyNYC",
+      "bot": false,
+      "locked": false,
+      "followers_count": 513,
+      "following_count": 815,
+      "statuses_count": 7931,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "109538323504476665",
+      "username": "sciencewrighter",
+      "acct": "sciencewrighter@m.ai6yr.org",
+      "display_name": "Sylvia Wright",
+      "url": "https://m.ai6yr.org/@sciencewrighter",
+      "bot": false,
+      "locked": true,
+      "followers_count": 168,
+      "following_count": 246,
+      "statuses_count": 1755,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 4
+    },
+    {
+      "id": "110895665584209090",
+      "username": "variety_feed",
+      "acct": "variety_feed",
+      "display_name": "Variety",
+      "url": "https://mastodon.social/@variety_feed",
+      "bot": true,
+      "locked": false,
+      "followers_count": 1188,
+      "following_count": 3,
+      "statuses_count": 68129,
+      "seed": false,
+      "event_post_count": 4,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 4
+    },
+    {
+      "id": "113700218132604612",
+      "username": "cecallihelper.bsky.social",
+      "acct": "cecallihelper.bsky.social@bsky.brid.gy",
+      "display_name": "",
+      "url": "https://bsky.brid.gy/r/https://bsky.app/profile/cecallihelper.bsky.social",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "108240981079141174",
+      "username": "disability",
+      "acct": "disability@a.gup.pe",
+      "display_name": "",
+      "url": "https://a.gup.pe/u/disability",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "109299499797516201",
+      "username": "eclectech",
+      "acct": "eclectech@things.uk",
+      "display_name": "",
+      "url": "https://things.uk/@eclectech",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "112835949526346092",
+      "username": "eventsforgamers",
+      "acct": "eventsforgamers@mastodon.gamedev.place",
+      "display_name": "",
+      "url": "https://mastodon.gamedev.place/@eventsforgamers",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "109379654728050308",
+      "username": "ml",
+      "acct": "ml@ecoevo.social",
+      "display_name": "Megan Lynch (she/her)",
+      "url": "https://ecoevo.social/@ml",
+      "bot": false,
+      "locked": true,
+      "followers_count": 1614,
+      "following_count": 914,
+      "statuses_count": 14246,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 3
+    },
+    {
+      "id": "114161776106042117",
+      "username": "mochy.bsky.social",
+      "acct": "mochy.bsky.social@bsky.brid.gy",
+      "display_name": "m o c h y",
+      "url": "https://bsky.brid.gy/r/https://bsky.app/profile/mochy.bsky.social",
+      "bot": false,
+      "locked": false,
+      "followers_count": 4,
+      "following_count": 1,
+      "statuses_count": 30,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 3
+    },
+    {
+      "id": "113772982090134085",
+      "username": "OFMDRecaps",
+      "acct": "OFMDRecaps@blorbo.social",
+      "display_name": "OFMD Recaps",
+      "url": "https://blorbo.social/@OFMDRecaps",
+      "bot": false,
+      "locked": false,
+      "followers_count": 34,
+      "following_count": 22,
+      "statuses_count": 539,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 1,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author",
+        "reply_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 3
+    },
+    {
+      "id": "109304464942897108",
+      "username": "petergleick",
+      "acct": "petergleick@fediscience.org",
+      "display_name": "",
+      "url": "https://fediscience.org/@petergleick",
+      "bot": false,
+      "locked": false,
+      "followers_count": null,
+      "following_count": null,
+      "statuses_count": null,
+      "seed": false,
+      "event_post_count": 0,
+      "reply_post_count": 0,
+      "mention_received_count": 1,
+      "discovery_methods": [
+        "mentioned_in_event_post"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "113433484173753003",
+      "username": "PoliticalFeed",
+      "acct": "PoliticalFeed",
+      "display_name": "Political Feed",
+      "url": "https://mastodon.social/@PoliticalFeed",
+      "bot": false,
+      "locked": false,
+      "followers_count": 18,
+      "following_count": 2,
+      "statuses_count": 462,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 3
+    },
+    {
+      "id": "113119208565517802",
+      "username": "sikar24",
+      "acct": "sikar24@sikar24.com",
+      "display_name": "sikar24",
+      "url": "https://sikar24.com/author/sikar24/",
+      "bot": false,
+      "locked": false,
+      "followers_count": 3,
+      "following_count": 0,
+      "statuses_count": 57026,
+      "seed": false,
+      "event_post_count": 3,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 3
+    },
+    {
+      "id": "109306868500059329",
+      "username": "ucaccessnow",
+      "acct": "ucaccessnow@sfba.social",
+      "display_name": "UC Access Now",
+      "url": "https://sfba.social/@ucaccessnow",
+      "bot": false,
+      "locked": true,
+      "followers_count": 696,
+      "following_count": 266,
+      "statuses_count": 4265,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 3
+    },
+    {
+      "id": "110729135535721600",
+      "username": "aerobuzz",
+      "acct": "aerobuzz@piaille.fr",
+      "display_name": "Aerobuzz / JumpSeat",
+      "url": "https://piaille.fr/@aerobuzz",
+      "bot": false,
+      "locked": false,
+      "followers_count": 63,
+      "following_count": 5,
+      "statuses_count": 5025,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "113298755582238590",
+      "username": "breakthrough_news_archive",
+      "acct": "breakthrough_news_archive@tankie.tube",
+      "display_name": "BreakThrough News Archive",
+      "url": "https://tankie.tube/a/breakthrough_news_archive/video-channels",
+      "bot": false,
+      "locked": false,
+      "followers_count": 27,
+      "following_count": 1,
+      "statuses_count": 5094,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "109367280742814706",
+      "username": "cookiesinheaven",
+      "acct": "cookiesinheaven@m.ai6yr.org",
+      "display_name": "jj the Santa Barbarian",
+      "url": "https://m.ai6yr.org/@cookiesinheaven",
+      "bot": false,
+      "locked": false,
+      "followers_count": 742,
+      "following_count": 719,
+      "statuses_count": 12824,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "109367452842773908",
+      "username": "DoomsdaysCW",
+      "acct": "DoomsdaysCW@kolektiva.social",
+      "display_name": "DoomsdaysCW",
+      "url": "https://kolektiva.social/@DoomsdaysCW",
+      "bot": false,
+      "locked": true,
+      "followers_count": 4052,
+      "following_count": 7488,
+      "statuses_count": 124991,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "109410837547921359",
+      "username": "events",
+      "acct": "events@mastodon.gamedev.place",
+      "display_name": "Events for Gamers",
+      "url": "https://mastodon.gamedev.place/@events",
+      "bot": false,
+      "locked": false,
+      "followers_count": 75,
+      "following_count": 6,
+      "statuses_count": 429,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 1,
+      "selection_score": 2
+    },
+    {
+      "id": "110883678926376390",
+      "username": "glnews_mirror",
+      "acct": "glnews_mirror@mastodon.hongkongers.net",
+      "display_name": "Global News",
+      "url": "https://mastodon.hongkongers.net/@glnews_mirror",
+      "bot": true,
+      "locked": false,
+      "followers_count": 572,
+      "following_count": 2,
+      "statuses_count": 54369,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "109297171925476825",
+      "username": "IveyJanette",
+      "acct": "IveyJanette",
+      "display_name": "Ivey Janette McClelland",
+      "url": "https://mastodon.social/@IveyJanette",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1784,
+      "following_count": 1214,
+      "statuses_count": 61671,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "109932807408762309",
+      "username": "IviChoc",
+      "acct": "IviChoc@mastodon.online",
+      "display_name": "Ivi Choc",
+      "url": "https://mastodon.online/@IviChoc",
+      "bot": false,
+      "locked": false,
+      "followers_count": 475,
+      "following_count": 412,
+      "statuses_count": 12499,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "109362401574115942",
+      "username": "longreads",
+      "acct": "longreads@mastodon.world",
+      "display_name": "Longreads",
+      "url": "https://mastodon.world/@longreads",
+      "bot": false,
+      "locked": false,
+      "followers_count": 7371,
+      "following_count": 606,
+      "statuses_count": 2243,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "113354182625370672",
+      "username": "SocialNewsXYZ",
+      "acct": "SocialNewsXYZ@www.socialnews.xyz",
+      "display_name": "Social News XYZ",
+      "url": "https://www.socialnews.xyz/author/socialnewsxyz/",
+      "bot": false,
+      "locked": false,
+      "followers_count": 13,
+      "following_count": 0,
+      "statuses_count": 4888,
+      "seed": false,
+      "event_post_count": 2,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 2
+    },
+    {
+      "id": "113505757124585364",
+      "username": "ai6yr.bsky.social",
+      "acct": "ai6yr.bsky.social@bsky.brid.gy",
+      "display_name": "AI6YR Ben",
+      "url": "http://bsky.brid.gy/r/https://bsky.app/profile/ai6yr.bsky.social",
+      "bot": false,
+      "locked": false,
+      "followers_count": 9,
+      "following_count": 0,
+      "statuses_count": 1,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "110586099686908121",
+      "username": "allaboutgeorge",
+      "acct": "allaboutgeorge@sfba.social",
+      "display_name": "George Kelly",
+      "url": "https://sfba.social/@allaboutgeorge",
+      "bot": false,
+      "locked": false,
+      "followers_count": 24,
+      "following_count": 10,
+      "statuses_count": 202,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "114168445468798810",
+      "username": "Annakarolinaheinrich",
+      "acct": "Annakarolinaheinrich",
+      "display_name": "Anna Karolina Heinrich",
+      "url": "https://mastodon.social/@Annakarolinaheinrich",
+      "bot": false,
+      "locked": false,
+      "followers_count": 5,
+      "following_count": 0,
+      "statuses_count": 446,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "113490368041027801",
+      "username": "arch",
+      "acct": "arch@fedi.gremlin.work",
+      "display_name": "Arch Gremlin",
+      "url": "https://fedi.gremlin.work/@arch",
+      "bot": false,
+      "locked": false,
+      "followers_count": 3,
+      "following_count": 144,
+      "statuses_count": 135,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "106199846482333151",
+      "username": "ashed",
+      "acct": "ashed@mastodon.ml",
+      "display_name": "Who Let The Dogs Out 🐾",
+      "url": "https://mastodon.ml/@ashed",
+      "bot": false,
+      "locked": true,
+      "followers_count": 209,
+      "following_count": 78,
+      "statuses_count": 15997,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109271441687908011",
+      "username": "ccferrie",
+      "acct": "ccferrie@mastodon.ie",
+      "display_name": "Ciarán Ferrie",
+      "url": "https://mastodon.ie/@ccferrie",
+      "bot": false,
+      "locked": false,
+      "followers_count": 2183,
+      "following_count": 1192,
+      "statuses_count": 14566,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "113503261354774117",
+      "username": "cybergeo",
+      "acct": "cybergeo@mapstodon.space",
+      "display_name": "Cybergeo",
+      "url": "https://mapstodon.space/@cybergeo",
+      "bot": false,
+      "locked": false,
+      "followers_count": 135,
+      "following_count": 36,
+      "statuses_count": 133,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "110408117981784629",
+      "username": "CynthesisToday",
+      "acct": "CynthesisToday@sfba.social",
+      "display_name": "CynthesisToday",
+      "url": "https://sfba.social/@CynthesisToday",
+      "bot": false,
+      "locked": false,
+      "followers_count": 185,
+      "following_count": 1154,
+      "statuses_count": 2688,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "1146980",
+      "username": "dancingtreefrog",
+      "acct": "dancingtreefrog",
+      "display_name": "David W. Jones",
+      "url": "https://mastodon.social/@dancingtreefrog",
+      "bot": false,
+      "locked": true,
+      "followers_count": 450,
+      "following_count": 596,
+      "statuses_count": 25811,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109331764773471102",
+      "username": "dbattistella",
+      "acct": "dbattistella@mstdn.ca",
+      "display_name": "DB 🌱💦",
+      "url": "https://mstdn.ca/@dbattistella",
+      "bot": false,
+      "locked": true,
+      "followers_count": 1565,
+      "following_count": 1628,
+      "statuses_count": 8247,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109902829147210684",
+      "username": "DebErupts",
+      "acct": "DebErupts",
+      "display_name": "Deborah Rose ❌👑",
+      "url": "https://mastodon.social/@DebErupts",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1341,
+      "following_count": 574,
+      "statuses_count": 16876,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "113792111972906104",
+      "username": "Dj_Miami",
+      "acct": "Dj_Miami",
+      "display_name": "DJ Miami Main",
+      "url": "https://mastodon.social/@Dj_Miami",
+      "bot": false,
+      "locked": false,
+      "followers_count": 3,
+      "following_count": 5,
+      "statuses_count": 2203,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109522241056920042",
+      "username": "djcomatose",
+      "acct": "djcomatose@mastodon.world",
+      "display_name": "DJ Comatose",
+      "url": "https://mastodon.world/@djcomatose",
+      "bot": false,
+      "locked": false,
+      "followers_count": 239,
+      "following_count": 584,
+      "statuses_count": 304,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "113643349398355830",
+      "username": "Doomscroll",
+      "acct": "Doomscroll@zirk.us",
+      "display_name": "𝕯𝖔𝖔𝖒𝖘𝖈𝖗𝖔𝖑𝖑™",
+      "url": "https://zirk.us/@Doomscroll",
+      "bot": false,
+      "locked": false,
+      "followers_count": 114,
+      "following_count": 669,
+      "statuses_count": 3340,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "113392665667361986",
+      "username": "drweb2",
+      "acct": "drweb2@drwebdomain.blog",
+      "display_name": "DrWeb",
+      "url": "https://drwebdomain.blog/author/drweb2/",
+      "bot": false,
+      "locked": false,
+      "followers_count": 55,
+      "following_count": 0,
+      "statuses_count": 17459,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "111193970138451644",
+      "username": "dustcircle",
+      "acct": "dustcircle",
+      "display_name": "Steve Dustcircle 🌹",
+      "url": "https://mastodon.social/@dustcircle",
+      "bot": false,
+      "locked": false,
+      "followers_count": 320,
+      "following_count": 141,
+      "statuses_count": 14568,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "113868212152895346",
+      "username": "eforestal",
+      "acct": "eforestal@masto.es",
+      "display_name": "Educación Forestal",
+      "url": "https://masto.es/@eforestal",
+      "bot": false,
+      "locked": false,
+      "followers_count": 41,
+      "following_count": 10,
+      "statuses_count": 8,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109279748980606315",
+      "username": "Galley",
+      "acct": "Galley@mastodon.online",
+      "display_name": "Gregg Alley",
+      "url": "https://mastodon.online/@Galley",
+      "bot": false,
+      "locked": false,
+      "followers_count": 409,
+      "following_count": 471,
+      "statuses_count": 8298,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109464696912608777",
+      "username": "ginichavez",
+      "acct": "ginichavez@mas.to",
+      "display_name": "Virginia Chavez",
+      "url": "https://mas.to/@ginichavez",
+      "bot": false,
+      "locked": false,
+      "followers_count": 112,
+      "following_count": 21,
+      "statuses_count": 475,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "110895267191819952",
+      "username": "glbc_mirror",
+      "acct": "glbc_mirror@mastodon.hongkongers.net",
+      "display_name": "Global News BC",
+      "url": "https://mastodon.hongkongers.net/@glbc_mirror",
+      "bot": true,
+      "locked": false,
+      "followers_count": 75,
+      "following_count": 2,
+      "statuses_count": 9626,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "110899192283194202",
+      "username": "glnational_mirror",
+      "acct": "glnational_mirror@mastodon.hongkongers.net",
+      "display_name": "Global News National",
+      "url": "https://mastodon.hongkongers.net/@glnational_mirror",
+      "bot": true,
+      "locked": false,
+      "followers_count": 257,
+      "following_count": 2,
+      "statuses_count": 18505,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "110879194335060326",
+      "username": "glokanagan_mirror",
+      "acct": "glokanagan_mirror@mastodon.hongkongers.net",
+      "display_name": "Global News Okanagan",
+      "url": "https://mastodon.hongkongers.net/@glokanagan_mirror",
+      "bot": true,
+      "locked": false,
+      "followers_count": 13,
+      "following_count": 2,
+      "statuses_count": 7522,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "110887970600911777",
+      "username": "glusnews_mirror",
+      "acct": "glusnews_mirror@mastodon.hongkongers.net",
+      "display_name": "Global News US News",
+      "url": "https://mastodon.hongkongers.net/@glusnews_mirror",
+      "bot": true,
+      "locked": false,
+      "followers_count": 21,
+      "following_count": 2,
+      "statuses_count": 3988,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "113621149090180871",
+      "username": "gporterwx.bsky.social",
+      "acct": "gporterwx.bsky.social@bsky.brid.gy",
+      "display_name": "Greg Porter",
+      "url": "https://bsky.brid.gy/r/https://bsky.app/profile/gporterwx.bsky.social",
+      "bot": false,
+      "locked": false,
+      "followers_count": 37,
+      "following_count": 7,
+      "statuses_count": 3,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "108165053108220032",
+      "username": "gtbarry",
+      "acct": "gtbarry",
+      "display_name": "gtbarry",
+      "url": "https://mastodon.social/@gtbarry",
+      "bot": false,
+      "locked": false,
+      "followers_count": 279,
+      "following_count": 65,
+      "statuses_count": 4396,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109354564202240035",
+      "username": "gwaldby",
+      "acct": "gwaldby",
+      "display_name": "GailWaldby@bsky.social❌👑",
+      "url": "https://mastodon.social/@gwaldby",
+      "bot": false,
+      "locked": true,
+      "followers_count": 4685,
+      "following_count": 5712,
+      "statuses_count": 71719,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "114048194944023530",
+      "username": "h4ckernews",
+      "acct": "h4ckernews",
+      "display_name": "Hacker News",
+      "url": "https://mastodon.social/@h4ckernews",
+      "bot": true,
+      "locked": false,
+      "followers_count": 2073,
+      "following_count": 2,
+      "statuses_count": 33085,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109367635728452603",
+      "username": "Iamgtsmith",
+      "acct": "Iamgtsmith@mstdn.ca",
+      "display_name": "Geraldo 🌎",
+      "url": "https://mstdn.ca/@Iamgtsmith",
+      "bot": false,
+      "locked": true,
+      "followers_count": 242,
+      "following_count": 274,
+      "statuses_count": 2256,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    },
+    {
+      "id": "109377851387696966",
+      "username": "iuculano",
+      "acct": "iuculano@masto.ai",
+      "display_name": "joe•iuculano :mastodon:",
+      "url": "https://masto.ai/@iuculano",
+      "bot": false,
+      "locked": false,
+      "followers_count": 1242,
+      "following_count": 684,
+      "statuses_count": 44835,
+      "seed": false,
+      "event_post_count": 1,
+      "reply_post_count": 0,
+      "mention_received_count": 0,
+      "discovery_methods": [
+        "event_post_author"
+      ],
+      "degree_in_collected_graph": 0,
+      "selection_score": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "109321601315889133",
+      "target": "109467456996781783",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115856009106807598",
+        "115856053013643551"
+      ]
+    },
+    {
+      "source": "109372040981377231",
+      "target": "109521459175223917",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 2,
+      "mention_count": 2,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113875310641374062",
+        "113875443299781052"
+      ]
+    },
+    {
+      "source": "109362756966520946",
+      "target": "109366705982844485",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "115588834023479456"
+      ]
+    },
+    {
+      "source": "109258025387991967",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 7,
+      "mention_count": 4,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "115340665420807753",
+        "113945757242035063",
+        "113852583835249665",
+        "113852588801475152"
+      ]
+    },
+    {
+      "source": "109362756966520946",
+      "target": "113292360995151258",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "115075702961719551"
+      ]
+    },
+    {
+      "source": "109299499797516201",
+      "target": "109538323504476665",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "114955524918918418"
+      ]
+    },
+    {
+      "source": "113700218132604612",
+      "target": "114547838217905149",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "114580549758924949"
+      ]
+    },
+    {
+      "source": "109314719785101432",
+      "target": "109344637925297796",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "114145574891087627"
+      ]
+    },
+    {
+      "source": "109277637336177593",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 13,
+      "mention_count": 11,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "114094350017136471",
+        "113841504883463074",
+        "113841617072381650",
+        "113841688887902343",
+        "113841747952650155",
+        "113841812097114155",
+        "113841841304212042",
+        "113841933505171572",
+        "113841937889003249",
+        "113841991521772487",
+        "113842035269278019"
+      ]
+    },
+    {
+      "source": "109314719785101432",
+      "target": "109786748962788539",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113997267332500498"
+      ]
+    },
+    {
+      "source": "109344637925297796",
+      "target": "109362756966520946",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 4,
+      "mention_count": 4,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113993634800947698",
+        "113993623164462614",
+        "113993615702004719",
+        "113993551038964951"
+      ]
+    },
+    {
+      "source": "108240981079141174",
+      "target": "109306868500059329",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113879470698184127"
+      ]
+    },
+    {
+      "source": "111069595970574659",
+      "target": "113427093838958172",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113857680817653924"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113427093838958172",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113857680817653924",
+        "115501318377521978"
+      ]
+    },
+    {
+      "source": "109366841555947654",
+      "target": "109464403869787096",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113857097485714588"
+      ]
+    },
+    {
+      "source": "109300908322558834",
+      "target": "109464403869787096",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113857097485714588"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109464403869787096",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113857097485714588"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110253827558017276",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113856650716404456"
+      ]
+    },
+    {
+      "source": "109362756966520946",
+      "target": "109396635895543644",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113850123200474796"
+      ]
+    },
+    {
+      "source": "109410837547921359",
+      "target": "112835949526346092",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113847011875599446"
+      ]
+    },
+    {
+      "source": "109304464942897108",
+      "target": "109430712040937231",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113837140935975149"
+      ]
+    },
+    {
+      "source": "109277637336177593",
+      "target": "109679802491186088",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 16,
+      "mention_count": 9,
+      "reply_count": 7,
+      "reblog_count": 0,
+      "status_ids": [
+        "113841671971346971",
+        "113841688887902343",
+        "113841703212112115",
+        "113841818520733373",
+        "113841846131087689",
+        "113841941090043439",
+        "113841797387892738",
+        "113841854501093890",
+        "113841933505171572"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109679802491186088",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 13,
+      "mention_count": 8,
+      "reply_count": 5,
+      "reblog_count": 0,
+      "status_ids": [
+        "113841671971346971",
+        "113841703212112115",
+        "113841747952650155",
+        "113841797387892738",
+        "113841812097114155",
+        "113841841304212042",
+        "113841854501093890",
+        "113841937889003249"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110240458469934942",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 8,
+      "mention_count": 5,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "113841947112105740",
+        "113841973355569668",
+        "113841991521772487",
+        "113841993764888990",
+        "113842035269278019"
+      ]
+    },
+    {
+      "source": "109679802491186088",
+      "target": "110240458469934942",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113841947112105740"
+      ]
+    },
+    {
+      "source": "109277637336177593",
+      "target": "110240458469934942",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 3,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113841947112105740",
+        "113841973355569668",
+        "113841993764888990"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "111270616296004000",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 14,
+      "mention_count": 8,
+      "reply_count": 6,
+      "reblog_count": 0,
+      "status_ids": [
+        "113842024805799780",
+        "113842035269278019",
+        "113842006535304342",
+        "115368683688169347",
+        "115368706009943775",
+        "115368737971181339",
+        "115369175615455880",
+        "115369501966540606"
+      ]
+    },
+    {
+      "source": "110240458469934942",
+      "target": "111270616296004000",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113842024805799780"
+      ]
+    },
+    {
+      "source": "109277637336177593",
+      "target": "111270616296004000",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113842024805799780",
+        "113842185424932436"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109565536948024629",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 18,
+      "mention_count": 9,
+      "reply_count": 9,
+      "reblog_count": 0,
+      "status_ids": [
+        "113842211448227963",
+        "113842223256341730",
+        "113842774759200379",
+        "113844341515599295",
+        "115766122970884512",
+        "115766130424278744",
+        "115766455237777523",
+        "115766500390341930",
+        "113885610832105457"
+      ]
+    },
+    {
+      "source": "109276229792401080",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113845688504755947",
+        "113845866107827616"
+      ]
+    },
+    {
+      "source": "109276229792401080",
+      "target": "111256716075028098",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113845945658245181"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "111256716075028098",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113845945658245181"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109525270675236513",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113846276823485852"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110640739957340079",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115339798833150661"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "792811",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115339864949549353"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109367865443855216",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115340634556427437"
+      ]
+    },
+    {
+      "source": "109276676622445893",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "115854623375842472",
+        "115854632475659765"
+      ]
+    },
+    {
+      "source": "108193759693986953",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115854652313493055"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109521618249568229",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115854683728375615"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109362756966520946",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 10,
+      "mention_count": 6,
+      "reply_count": 4,
+      "reblog_count": 0,
+      "status_ids": [
+        "113864184516722652",
+        "113924977488887565",
+        "113925083457781148",
+        "113925098384486490",
+        "113913119314980123",
+        "113913129421146205"
+      ]
+    },
+    {
+      "source": "109362316721172503",
+      "target": "109362756966520946",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113864205923150732"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109362316721172503",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113864205923150732"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109560317417390766",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113864557994410270"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110662702605265128",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "115766120450055025",
+        "115766126326607146"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113063102955050997",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115766748664716798"
+      ]
+    },
+    {
+      "source": "108194856164807197",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 55,
+      "mention_count": 31,
+      "reply_count": 24,
+      "reblog_count": 0,
+      "status_ids": [
+        "115673735498048116",
+        "115029284380377454",
+        "113852470160141720",
+        "113852450188240464",
+        "115857741270551663",
+        "116095846526818645",
+        "116095856448352964",
+        "116098655608993195",
+        "116095802275005538",
+        "116095809714416515",
+        "116095819150663061",
+        "116095820134814881",
+        "116095823956683948",
+        "116095832651821978",
+        "116095839821078305",
+        "115861044147312095",
+        "115861062070507605",
+        "115861066917650358",
+        "115861073411807727",
+        "115381243002138383",
+        "115381266449181398",
+        "115381307033910591",
+        "115381429113806007",
+        "115381022681742244",
+        "114504068633798785",
+        "114345838689821231",
+        "114345858444897951",
+        "114356801031506886",
+        "114356804709913268",
+        "114356805761829800",
+        "114002912769236330"
+      ]
+    },
+    {
+      "source": "108194856164807197",
+      "target": "109537254594856796",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115673793174000084"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109537254594856796",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "115673793174000084"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109521639763343689",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115673922878708213",
+        "115676009152675489"
+      ]
+    },
+    {
+      "source": "109362556345297756",
+      "target": "109521639763343689",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115674175368510026"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109362556345297756",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "115674175368510026"
+      ]
+    },
+    {
+      "source": "109521639763343689",
+      "target": "115143444131318194",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "115675997900937321",
+        "115676009152675489",
+        "115676014081343480"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "115143444131318194",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 2,
+      "mention_count": 2,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "115675997900937321",
+        "115676014081343480"
+      ]
+    },
+    {
+      "source": "109277637336177593",
+      "target": "115143444131318194",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115676146082536207"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "58528",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115674234054653178"
+      ]
+    },
+    {
+      "source": "112854264853553638",
+      "target": "58528",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "115674234054653178"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109462894504903209",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 7,
+      "mention_count": 4,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "115183392837262446",
+        "113912794521467766",
+        "114001387616347533",
+        "114002966881946709"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110609610495588620",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115183395608723016",
+        "115183505119438440"
+      ]
+    },
+    {
+      "source": "110609610495588620",
+      "target": "110640570007258764",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115183453889350868"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110640570007258764",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "115183453889350868"
+      ]
+    },
+    {
+      "source": "109366550461584397",
+      "target": "110609610495588620",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115183502741567570"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109366550461584397",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 9,
+      "mention_count": 6,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "115183502741567570",
+        "115183505119438440",
+        "113943454159821179",
+        "113991678384613204",
+        "113992293301710548",
+        "113992458057999983"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "1138175",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "115184473341783767",
+        "114505421584145408",
+        "115857427325235754"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109327860275149734",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115029291621506005"
+      ]
+    },
+    {
+      "source": "109366550461584397",
+      "target": "109752047061675651",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113944018752383835"
+      ]
+    },
+    {
+      "source": "109363062233496348",
+      "target": "109569486384786760",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113902624117854269",
+        "113902650254318973"
+      ]
+    },
+    {
+      "source": "109569486384786760",
+      "target": "113832948745444828",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113902850281198818"
+      ]
+    },
+    {
+      "source": "109293849404033510",
+      "target": "109569486384786760",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "113903111075155029",
+        "113904419014443043",
+        "113904484009910628"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113612925814324486",
+      "relationship_types": [
+        "reply",
+        "mention"
+      ],
+      "weight": 3,
+      "mention_count": 1,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113852283051684505",
+        "113852288663045405"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109361982880379903",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113852344194721771",
+        "113852349121220623"
+      ]
+    },
+    {
+      "source": "109299002467373902",
+      "target": "109361982880379903",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113852414886078091"
+      ]
+    },
+    {
+      "source": "109299002467373902",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113852414886078091",
+        "113840257200278192"
+      ]
+    },
+    {
+      "source": "109521459175223917",
+      "target": "109565536948024629",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113875323846458923"
+      ]
+    },
+    {
+      "source": "109320716444916965",
+      "target": "109521459175223917",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113875382699036904",
+        "113875443299781052"
+      ]
+    },
+    {
+      "source": "109320716444916965",
+      "target": "109372040981377231",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113875382699036904"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113851762197556170",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "115766968798026272",
+        "115766984521347241"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110897461087270374",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115767200268037113"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110659067277544231",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115584125391234415"
+      ]
+    },
+    {
+      "source": "109304935971837337",
+      "target": "110659067277544231",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115584224982131341"
+      ]
+    },
+    {
+      "source": "109304935971837337",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "115584224982131341"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109364548884359930",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "114933152114382517"
+      ]
+    },
+    {
+      "source": "109364548884359930",
+      "target": "113809573080680866",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "114933232217293514"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "112170269206349103",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 4,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "114501466256900424",
+        "114501594387584063",
+        "114501605342474251",
+        "114903977468238802"
+      ]
+    },
+    {
+      "source": "109303849360164627",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 3,
+      "mention_count": 3,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "114501573501348819",
+        "114501602965404386",
+        "114501631612000083"
+      ]
+    },
+    {
+      "source": "109303849360164627",
+      "target": "112170269206349103",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 10,
+      "mention_count": 6,
+      "reply_count": 4,
+      "reblog_count": 0,
+      "status_ids": [
+        "114501573501348819",
+        "114501594387584063",
+        "114501602965404386",
+        "114501607706268109",
+        "114501631612000083",
+        "114501605342474251"
+      ]
+    },
+    {
+      "source": "108201864721973880",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 8,
+      "mention_count": 4,
+      "reply_count": 4,
+      "reblog_count": 0,
+      "status_ids": [
+        "114003487880834912",
+        "114003495726886464",
+        "114003575647018481",
+        "114003590500353960"
+      ]
+    },
+    {
+      "source": "109300010061732719",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 5,
+      "mention_count": 3,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "114003490037702516",
+        "114003555195391353",
+        "114003571302820728"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110725554214022622",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "113999528042974002",
+        "113999627692706560",
+        "113999682937032590"
+      ]
+    },
+    {
+      "source": "109314719785101432",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 14,
+      "mention_count": 8,
+      "reply_count": 6,
+      "reblog_count": 0,
+      "status_ids": [
+        "113999563234784319",
+        "115538610365196845",
+        "115380935424701957",
+        "115380990437221249",
+        "115381164520627938",
+        "114085052794786571",
+        "114085484308732129",
+        "114072982064406724"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "112112233954551289",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113999664867760400"
+      ]
+    },
+    {
+      "source": "107860226365441485",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "113999484813987099",
+        "113999489024965239",
+        "113999500017608716"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113868184045370311",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113993693088758249",
+        "113993700751575186"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109391045419718303",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113993927566089765"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113918199347004515",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 5,
+      "mention_count": 3,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113952811318129228",
+        "113952819514894109",
+        "113952982708891167"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "111685037704760083",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113952875498952083"
+      ]
+    },
+    {
+      "source": "111685037704760083",
+      "target": "113918199347004515",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113952875498952083",
+        "113952982708891167"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109910403173574791",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113952989211193657"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "111089957634114690",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113925079354322112",
+        "113925083457781148"
+      ]
+    },
+    {
+      "source": "109362756966520946",
+      "target": "111089957634114690",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113925079354322112",
+        "113925098384486490"
+      ]
+    },
+    {
+      "source": "109319765150489643",
+      "target": "109362756966520946",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113925233482342800"
+      ]
+    },
+    {
+      "source": "109185347246293613",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 5,
+      "mention_count": 3,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113912747443702766",
+        "113912915706524513",
+        "113912771998789903"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113477804345261526",
+      "relationship_types": [
+        "reply"
+      ],
+      "weight": 1,
+      "mention_count": 0,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113912757880492266"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "412496",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113912775249653289"
+      ]
+    },
+    {
+      "source": "108209993019225688",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 8,
+      "mention_count": 4,
+      "reply_count": 4,
+      "reblog_count": 0,
+      "status_ids": [
+        "113912886114412170",
+        "113885066708613025",
+        "113840588910141392",
+        "113840592083300468"
+      ]
+    },
+    {
+      "source": "108209993019225688",
+      "target": "113049439227521302",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113913023698178445"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113049439227521302",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113913023698178445"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109780588081944821",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113913740796323404",
+        "114251920843796080"
+      ]
+    },
+    {
+      "source": "109316662041388619",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113912735613076577",
+        "113913064172301574"
+      ]
+    },
+    {
+      "source": "109185347246293613",
+      "target": "109316662041388619",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113912771998789903",
+        "113913064172301574"
+      ]
+    },
+    {
+      "source": "109305315631888531",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113885077884445532",
+        "113885083553211098"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109479086979583600",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 7,
+      "mention_count": 4,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "113885046943655825",
+        "113885048493130496",
+        "113885054605672540",
+        "113885059313562588"
+      ]
+    },
+    {
+      "source": "109525810222134461",
+      "target": "109544056586069897",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 12,
+      "mention_count": 11,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113892908233467801",
+        "113925574281567722",
+        "113959252767386229",
+        "113959631627502506",
+        "113960291422731372",
+        "114137074317158961",
+        "115742897487125539",
+        "114139950925687992",
+        "114151847783639817",
+        "114140799222476905",
+        "113961247214006812"
+      ]
+    },
+    {
+      "source": "109294986589122732",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113892908233467801",
+        "113904567948071478"
+      ]
+    },
+    {
+      "source": "109525810222134461",
+      "target": "113867080811525587",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 4,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113875644634495188",
+        "113875705655100089",
+        "113882150985610805",
+        "113882199384878949"
+      ]
+    },
+    {
+      "source": "109088011068906528",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 16,
+      "mention_count": 8,
+      "reply_count": 8,
+      "reblog_count": 0,
+      "status_ids": [
+        "113877135880498976",
+        "113882150985610805",
+        "113882183540549373",
+        "113882199384878949",
+        "114137818640485678",
+        "114139950925687992",
+        "114151652303159770",
+        "114151847783639817"
+      ]
+    },
+    {
+      "source": "109088011068906528",
+      "target": "113867080811525587",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 2,
+      "mention_count": 2,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113877135880498976",
+        "113882183540549373"
+      ]
+    },
+    {
+      "source": "109340625414220464",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113920598436864114"
+      ]
+    },
+    {
+      "source": "109205963723515372",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113932575953730627"
+      ]
+    },
+    {
+      "source": "109525810222134461",
+      "target": "109612954590547350",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "113943421825112465",
+        "114029417396699682",
+        "114029426121785868"
+      ]
+    },
+    {
+      "source": "109525810222134461",
+      "target": "109797278252818197",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113943851353302899"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 8,
+      "mention_count": 4,
+      "reply_count": 4,
+      "reblog_count": 0,
+      "status_ids": [
+        "113948304878657812",
+        "113948325522326079",
+        "113870032890929043",
+        "113870049421297136"
+      ]
+    },
+    {
+      "source": "109419274002643262",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113957761044437250"
+      ]
+    },
+    {
+      "source": "109390409229717187",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 2,
+      "mention_count": 2,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "114027395156775373",
+        "114028258573028557"
+      ]
+    },
+    {
+      "source": "109268980483243765",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "114038563769915092",
+        "114038600167747937"
+      ]
+    },
+    {
+      "source": "109088011068906528",
+      "target": "109544056586069897",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 2,
+      "mention_count": 2,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "114137818640485678",
+        "114151652303159770"
+      ]
+    },
+    {
+      "source": "109308055880859866",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 14,
+      "mention_count": 7,
+      "reply_count": 7,
+      "reblog_count": 0,
+      "status_ids": [
+        "114160116017232129",
+        "114162655345767067",
+        "113961194080830255",
+        "113961247214006812",
+        "113948496023097737",
+        "113948539716798502",
+        "113948548636419076"
+      ]
+    },
+    {
+      "source": "109308055880859866",
+      "target": "109544056586069897",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113961194080830255"
+      ]
+    },
+    {
+      "source": "109525810222134461",
+      "target": "110052571791683859",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 8,
+      "mention_count": 4,
+      "reply_count": 4,
+      "reblog_count": 0,
+      "status_ids": [
+        "113925468186329409",
+        "113925529478541873",
+        "113925581390219202",
+        "113925671306277834"
+      ]
+    },
+    {
+      "source": "109294986589122732",
+      "target": "109544056586069897",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113904567948071478"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109948963947983998",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113850896533624710"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109323020032812696",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113851282061672131"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109702660873984151",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113840998707537766"
+      ]
+    },
+    {
+      "source": "108209993019225688",
+      "target": "109702660873984151",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 5,
+      "mention_count": 3,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113840998707537766",
+        "113841285356869780",
+        "113841398777248351"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "111210117932795043",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113841428271598288",
+        "113841471739592405"
+      ]
+    },
+    {
+      "source": "108194890308088987",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113840245418582691"
+      ]
+    },
+    {
+      "source": "109314719785101432",
+      "target": "109366550461584397",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "117299334945965244",
+        "117299646573640308"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "117169473084457668",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "117194075717927557"
+      ]
+    },
+    {
+      "source": "110088287007315114",
+      "target": "110811919976627606",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "116747869704255127",
+        "116747872722256885",
+        "116747881077230365"
+      ]
+    },
+    {
+      "source": "109362756966520946",
+      "target": "110640739957340079",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "116144056877350257"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109383357571366508",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "116098583543158028"
+      ]
+    },
+    {
+      "source": "108194856164807197",
+      "target": "109383357571366508",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "116098583543158028",
+        "116098655608993195"
+      ]
+    },
+    {
+      "source": "109254519388773773",
+      "target": "109366041770161475",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113795112275048434"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "111012175813159771",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115811147071655880"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "114349784347156138",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115767377927080411"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109376883042037376",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "115746706675896845",
+        "115746733873882935"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "111187643456808385",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115741703680698911"
+      ]
+    },
+    {
+      "source": "108138122207700955",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115567511792931755"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113976417919345667",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115418316972297989"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109371847891875579",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "115369168978216318",
+        "115369175615455880",
+        "115369212329293495"
+      ]
+    },
+    {
+      "source": "109371847891875579",
+      "target": "111270616296004000",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 3,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115369168978216318",
+        "115369212329293495",
+        "115369501966540606"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109399233825895825",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115368514879459050"
+      ]
+    },
+    {
+      "source": "109525810222134461",
+      "target": "113200132295857967",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113799766530934501"
+      ]
+    },
+    {
+      "source": "109462894504903209",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113799766530934501"
+      ]
+    },
+    {
+      "source": "109525810222134461",
+      "target": "110266162634306901",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113801562029988826"
+      ]
+    },
+    {
+      "source": "109333705137753806",
+      "target": "109525810222134461",
+      "relationship_types": [
+        "mention"
+      ],
+      "weight": 1,
+      "mention_count": 1,
+      "reply_count": 0,
+      "reblog_count": 0,
+      "status_ids": [
+        "113801562029988826"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113371204894683573",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "115344938992307250"
+      ]
+    },
+    {
+      "source": "113427093838958172",
+      "target": "113976417919345667",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 6,
+      "mention_count": 3,
+      "reply_count": 3,
+      "reblog_count": 0,
+      "status_ids": [
+        "115340114404520168",
+        "115340243491472133",
+        "115340294838395546"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "109552629781476696",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "115220880777836250",
+        "113904060032274063"
+      ]
+    },
+    {
+      "source": "114141745690997283",
+      "target": "114547838217905149",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "114559972743013676"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "1272131",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "114163251519009486"
+      ]
+    },
+    {
+      "source": "109276007211588752",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "114147653310986399"
+      ]
+    },
+    {
+      "source": "109317493120671996",
+      "target": "109364548884359930",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "114142745151102846"
+      ]
+    },
+    {
+      "source": "108194856164807197",
+      "target": "109462894504903209",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "114002912769236330",
+        "114002966881946709"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "111109330643883082",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113994597760472948"
+      ]
+    },
+    {
+      "source": "107589662702292545",
+      "target": "109321601315889133",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 4,
+      "mention_count": 2,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113994303455617826",
+        "113994313580955350"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "110433002329275149",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 3,
+      "mention_count": 2,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113991678384613204",
+        "113992328163224810"
+      ]
+    },
+    {
+      "source": "109366550461584397",
+      "target": "110433002329275149",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 5,
+      "mention_count": 3,
+      "reply_count": 2,
+      "reblog_count": 0,
+      "status_ids": [
+        "113992293301710548",
+        "113992328163224810",
+        "113992458057999983"
+      ]
+    },
+    {
+      "source": "109321601315889133",
+      "target": "113307464583381557",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113930525004830980"
+      ]
+    },
+    {
+      "source": "109364548884359930",
+      "target": "109373761760024781",
+      "relationship_types": [
+        "mention",
+        "reply"
+      ],
+      "weight": 2,
+      "mention_count": 1,
+      "reply_count": 1,
+      "reblog_count": 0,
+      "status_ids": [
+        "113924397419689579"
+      ]
+    }
+  ]
+}

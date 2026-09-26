@@ -1,0 +1,22 @@
+CSE 472 Network Export Summary
+================================
+
+Information Diffusion Network (directed)
+Nodes: 931
+Edges: 461
+Average degree: 0.9903
+Density: 0.000532
+Weakly connected components: 470
+Largest weak component: 82
+Isolates: 375
+Edge direction: parent/original post -> reply/reblog post
+
+User Network (undirected)
+Nodes: 200
+Edges: 170
+Average degree: 1.7000
+Density: 0.008543
+Connected components: 65
+Largest component: 125
+Isolates: 56
+Edge meaning: at least one mention, reply, or reblog interaction

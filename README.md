@@ -55,6 +55,20 @@ python src/collect_posts.py
 python src/collect_users.py
 ```
 
+## 5. 네트워크 구성 및 Gephi 파일 생성
+
+```powershell
+python src/build_networks.py
+python src/plot_network_previews.py
+```
+
+`output/networks/`에 두 네트워크의 GEXF, GraphML, 노드 CSV, 엣지 CSV가 생성됩니다. Gephi에서는 GEXF 파일을 열면 됩니다.
+
+- `information_diffusion.gexf`: 게시물이 노드이며, 원 게시물에서 답글로 향하는 방향성 엣지를 사용합니다.
+- `user_network.gexf`: 사용자가 노드이며, 멘션·답글·재게시 관계가 있으면 무방향 엣지를 사용합니다.
+
+`output/figures/`의 PNG는 데이터와 레이아웃을 빠르게 확인하기 위한 미리보기입니다. 최종 보고서에는 Gephi에서 서로 다른 레이아웃과 노드 크기 설정을 적용해 내보낸 이미지를 사용합니다.
+
 Mastodon은 분산형 서비스이므로 선택한 서버가 알고 있는 게시물만 반환합니다. 목표 수량이 부족하면 관련 해시태그나 seed user를 추가하거나, 해당 사건의 게시물을 더 많이 알고 있는 서버를 사용해야 합니다.
 
 ## 공식 API 문서
